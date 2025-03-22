@@ -43,6 +43,21 @@ header p {
   outline-offset: 2px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+
 section {
   max-width: 800px;
   margin: 3rem auto;
