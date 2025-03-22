@@ -258,7 +258,7 @@ section h2 {
 
 .video-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -278,7 +278,9 @@ section h2 {
 }
 
 video {
-  width: 100%;
+  width: 100%; /* Ensures the video takes up the full width of its container */
+  max-width: 600px; /* Limits the maximum width for larger screens */
+  height: auto; /* Maintains aspect ratio */
   border-radius: 10px;
   outline: none;
   background-color: var(--card-bg-color); /* Matches card background */
