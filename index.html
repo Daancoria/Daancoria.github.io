@@ -13,51 +13,72 @@
     <div class="header-container">
       <img src="profile.jpg" alt="Daniel Anievas Coria's Profile Picture" class="profile-picture" />
       <div>
-        <h1>Daniel Anievas Coria</h1>
-        <p>Software Developer, Translator and Interpreter</p>
+        <h1 data-translate="Daniel Anievas Coria">Daniel Anievas Coria</h1>
+        <p data-translate="Software Developer">Software Developer</p>
         <nav>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-translate="About">About</a></li>
+            <li><a href="#projects" data-translate="Projects">Projects</a></li>
+            <li><a href="#contact" data-translate="Contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="language-selector">
+          <label for="language" data-translate="Translate:">Translate:</label>
+          <select id="language">
+            <option value="en" data-translate="English">English</option>
+            <option value="es" data-translate="Español">Español</option>
+            <option value="fr" data-translate="Français">Français</option>
+            <option value="it" data-translate="Italiano">Italiano</option>
+          </select>
+        </div>
         <div class="socials">
-          <a href="https://github.com/Daancoria" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's GitHub profile">GitHub</a>
-          <a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's LinkedIn profile">LinkedIn</a>
-          <a href="https://www.atanet.org/member-directory/daniel-anievas-coria/" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's ATA profile">American Translators Association</a>
+          <a href="https://github.com/Daancoria" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's GitHub profile" data-translate="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's LinkedIn profile" data-translate="LinkedIn">LinkedIn</a>
+          <a href="https://www.atanet.org/member-directory/daniel-anievas-coria/" target="_blank" rel="noopener noreferrer" aria-label="Visit Daniel's ATA profile" data-translate="American Translators Association">American Translators Association</a>
         </div>
       </div>
     </div>
   </header>
-
+  
   <section id="about">
-    <h2>About Me</h2>
-    <p>👋 Hi, I am @Daancoria</p>
-    <p>👀 I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.</p> 
-    <p>🌱 Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.</p>
-    <p>💞️ Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.</p> 
-    <p>📫 How to reach me: <a href="mailto:daancoria@gmail.com">daancoria@gmail.com</a> | <a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p> 
-    <p>😄 Pronouns: he\him\his</p> 
-    <p>⚡ Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!</p>
+    <h2 data-translate="About Me">About Me</h2>
+    <p data-translate="Hi, I am @Daancoria">👋 Hi, I am @Daancoria</p>
+    <p data-translate="I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.">
+      👀 I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.
+    </p>
+    <p data-translate="Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.">
+      🌱 Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.
+    </p>
+    <p data-translate="Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.">
+      💞️ Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.
+    </p>
+    <p data-translate="How to reach me:">📫 How to reach me:</p>
+    <p>
+      <a href="mailto:daancoria@gmail.com" data-translate="Email">Email</a> | 
+      <a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer" data-translate="LinkedIn">LinkedIn</a>
+    </p>
+    <p data-translate="Pronouns: he/him/his">😄 Pronouns: he/him/his</p>
+    <p data-translate="Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!">
+      ⚡ Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!
+    </p>
   </section>
-
+  
   <section id="skills">
-    <h2>Skills</h2>
+    <h2 data-translate="Skills">Skills</h2>
     <ul class="skills-list">
-      <li>Python</li>
-      <li>Pygame</li>
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>Git/GitHub</li>
-      <li>Game development</li>
-      <li>Object-oriented programming</li>
-      <li>Responsive design</li>
-      <li>Problem-solving</li>
-      <li>English</li>
-      <li>Spanish</li>
-      <li>French</li>
-      <i>Italian</i>
+      <li data-translate="Python">Python</li>
+      <li data-translate="Pygame">Pygame</li>
+      <li data-translate="HTML/CSS">HTML/CSS</li>
+      <li data-translate="JavaScript">JavaScript</li>
+      <li data-translate="Git/GitHub">Git/GitHub</li>
+      <li data-translate="Game development">Game development</li>
+      <li data-translate="Object-oriented programming">Object-oriented programming</li>
+      <li data-translate="Responsive design">Responsive design</li>
+      <li data-translate="Problem-solving">Problem-solving</li>
+      <li data-translate="English">English</li>
+      <li data-translate="Spanish">Spanish</li>
+      <li data-translate="French">French</li>
+      <li data-translate="Italian">Italian</li>
     </ul>
   </section>
 
@@ -189,16 +210,17 @@
     </div>
   </section>
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via:</p>
-    <ul>
-      <li><a href="mailto:daancoria@gmail.com">Email</a></li>
-      <li><a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    </ul>
-  </section>
+  <h2 data-translate="Contact">Contact</h2>
+  <p data-translate="Feel free to reach out via:">Feel free to reach out via:</p>
+  <ul>
+    <li><a href="mailto:daancoria@gmail.com" data-translate="Email">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/daniel-anievas-coria-18a613354/" target="_blank" rel="noopener noreferrer" data-translate="LinkedIn">LinkedIn</a></li>
+  </ul>
+</section>
 
   <footer>
     <p>&copy; 2025 Daniel Anievas Coria</p>
   </footer>
 </body>
 </html>
+
