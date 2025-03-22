@@ -49,7 +49,7 @@ header p {
   outline-offset: 2px;
 }
 
-.socials a::after {
+socials a::after {
   content: '';
   display: block;
   width: 0;
@@ -90,13 +90,42 @@ header p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* Navigation styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--text-color);
+}
+
 section {
   max-width: 800px;
   margin: 3rem auto;
-  padding: 0 1rem;
+  padding: 4rem 1rem;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 1s ease-in-out forwards;
+  border-bottom: 1px solid var(--border-color);
+}
+
+section:last-of-type {
+  border-bottom: none;
 }
 
 section:nth-child(2) {
@@ -141,12 +170,7 @@ section h2 {
   color: var(--text-color);
 }
 
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
+/* Project card styles */
 .project-card {
   background-color: var(--card-bg-color);
   padding: 1rem;
@@ -155,6 +179,10 @@ section h2 {
   color: var(--text-color);
   border: 1px solid var(--border-color);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .project-card:hover {
@@ -171,6 +199,24 @@ section h2 {
 .project-card h3 {
   margin-top: 0;
   color: var(--primary-color);
+}
+
+/* Thumbnail styles */
+.project-thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Responsive grid for project list */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 footer {
@@ -202,6 +248,14 @@ footer {
   section h2 {
     font-size: 1.5rem;
   }
+
+  .project-card {
+    padding: 0.5rem;
+  }
+
+  .project-thumbnail {
+    max-width: 100%;
+  }
 }
 
 /* Keyframes for animations */
@@ -222,9 +276,5 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-  section h2 {
-    font-size: 1.5rem;
   }
 }
