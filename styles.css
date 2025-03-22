@@ -38,7 +38,7 @@ header p {
   font-weight: 600;
 }
 
-.socials a:focus {
+socials a:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
@@ -51,8 +51,8 @@ header p {
 }
 
 .profile-picture {
-  width: 100px;
-  height: 100px;
+  width: 150px; /* Adjusted size */
+  height: 150px; /* Adjusted size */
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--primary-color);
