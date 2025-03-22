@@ -38,7 +38,7 @@ header p {
   font-weight: 600;
 }
 
-socials a:focus {
+.socials a:focus {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
@@ -48,11 +48,13 @@ socials a:focus {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+  justify-content: center; /* Centers content on smaller screens */
 }
 
 .profile-picture {
-  width: 150px; /* Adjusted size */
-  height: 150px; /* Adjusted size */
+  width: 150px; /* Default size */
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--primary-color);
@@ -126,10 +128,21 @@ footer {
   margin-top: 3rem;
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
+  .profile-picture {
+    width: 100px; /* Smaller size for small screens */
+    height: 100px;
   }
+
+  header h1 {
+    font-size: 2rem; /* Adjust header font size */
+  }
+
+  header p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
   section h2 {
     font-size: 1.5rem;
   }
