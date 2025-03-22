@@ -16,6 +16,21 @@ body {
   line-height: 1.6;
 }
 
+/* General background and text adjustments */
+body {
+  background-color: var(--background-color); /* Dark background */
+  color: var(--text-color); /* Light text for contrast */
+}
+
+header h1, header p, section h2, .project-card h3, .video-card h3 {
+  color: var(--text-color); /* Ensure headings are readable */
+}
+
+.project-card, .video-card {
+  background-color: var(--card-bg-color); /* Slightly lighter background for cards */
+  color: var(--text-color); /* Ensure text is readable on card backgrounds */
+}
+
 /* Add smooth transitions globally */
 * {
   transition: all 0.3s ease-in-out;
@@ -37,7 +52,13 @@ header p {
 }
 
 .socials a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
   color: var(--primary-color);
+  transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
   margin: 0 0.5rem;
   font-weight: 600;
@@ -59,6 +80,11 @@ socials a::after {
   position: absolute;
   bottom: -2px;
   left: 0;
+}
+
+.socials a:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color); /* Invert colors on hover */
 }
 
 .socials a:hover::after {
@@ -222,6 +248,42 @@ section h2 {
   object-fit: cover;
 }
 
+/* Video section styles */
+#project-videos {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: var(--background-color); /* Matches the overall theme */
+  color: var(--text-color);
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  background-color: var(--card-bg-color); /* Matches project card background */
+  color: var(--text-color); /* Ensure text is readable */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.video-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--card-bg-color); /* Matches card background */
+}
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -231,6 +293,23 @@ footer {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 2s;
+}
+
+/* Link styles */
+a {
+  color: var(--primary-color); /* Matches the theme */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--text-color); /* Changes to text color on hover */
+}
+
+/* Social links hover effect */
+.socials a:hover {
+  color: var(--text-color); /* Matches hover effect for consistency */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -258,6 +337,27 @@ footer {
 
   .project-thumbnail {
     max-width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem;
+  }
+
+  .project-card, .video-card {
+    padding: 1rem;
+  }
+
+  .project-thumbnail, video {
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
   }
 }
 
