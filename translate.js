@@ -342,3 +342,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Toggle dropdown menu
+document.querySelector(".dropdown-toggle").addEventListener("click", () => {
+  document.querySelector(".dropdown-menu").classList.toggle("active");
+});
