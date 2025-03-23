@@ -347,3 +347,4 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelector(".dropdown-toggle").addEventListener("click", () => {
   document.querySelector(".dropdown-menu").classList.toggle("active");
 });
+
