@@ -1,385 +1,327 @@
-/* Define CSS variables for colors */
-:root {
-  --background-color: #0f0f0f;
-  --text-color: #f0f0f0;
-  --primary-color: #1f8ef1;
-  --card-bg-color: #1a1a1a;
-  --border-color: #333;
-}
-
-/* Global Styles */
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-/* General background and text adjustments */
-body {
-  background-color: var(--background-color); /* Dark background */
-  color: var(--text-color); /* Light text for contrast */
-}
-
-header h1, header p, section h2, .project-card h3, .video-card h3 {
-  color: var(--text-color); /* Ensure headings are readable */
-}
-
-.project-card, .video-card {
-  background-color: var(--card-bg-color); /* Slightly lighter background for cards */
-  color: var(--text-color); /* Ensure text is readable on card backgrounds */
-}
-
-/* Add smooth transitions globally */
-* {
-  transition: all 0.3s ease-in-out;
-}
-
-header {
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.socials a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
-  background-color: transparent;
-  color: var(--primary-color);
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-weight: 600;
-  position: relative;
-}
-
-.socials a:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-socials a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-}
-
-.socials a:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color); /* Invert colors on hover */
-}
-
-.socials a:hover::after {
-  width: 100%; /* Underline animation */
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-  justify-content: center; /* Centers content on smaller screens */
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
-}
-
-.profile-picture {
-  width: 150px; /* Default size */
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.profile-picture:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-/* Navigation styles */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  position: absolute; /* Position the navigation */
-  top: 1rem; /* Distance from the top */
-  right: 1rem; /* Distance from the right */
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: 600;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-links a:hover {
-  color: var(--text-color);
-}
-
-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 4rem 1rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideUp 1s ease-in-out forwards;
-  border-bottom: 1px solid var(--border-color);
-}
-
-section:last-of-type {
-  border-bottom: none;
-}
-
-section:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-section:nth-child(3) {
-  animation-delay: 1s;
-}
-
-section:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 0.5rem;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.skills-list li {
-  background-color: var(--card-bg-color);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.skills-list li:hover {
-  transform: scale(1.1);
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-/* Project list styles */
-.project-list {
-  display: flex;
-  flex-direction: column; /* Stack projects vertically */
-  gap: 2rem; /* Add spacing between rows */
-  padding: 1rem;
-}
-
-/* Project card styles */
-.project-card {
-  background-color: var(--card-bg-color);
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  border-color: var(--primary-color);
-}
-
-.project-card:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-.project-card h3 {
-  margin-top: 0;
-  color: var(--primary-color);
-}
-
-/* Thumbnail styles */
-.project-thumbnail {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-
-/* Video section styles */
-#project-videos {
-  padding: 4rem 1rem;
-  text-align: center;
-  background-color: var(--background-color); /* Matches the overall theme */
-  color: var(--text-color);
-}
-
-.video-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.video-card {
-  background-color: var(--card-bg-color); /* Matches project card background */
-  color: var(--text-color); /* Ensure text is readable */
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.video-card h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-video {
-  width: 100%; /* Ensures the video takes up the full width of its container */
-  max-width: 600px; /* Limits the maximum width for larger screens */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px;
-  outline: none;
-  background-color: var(--card-bg-color); /* Matches card background */
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  border-top: 1px solid var(--border-color);
-  margin-top: 3rem;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-  animation-delay: 2s;
-}
-
-/* Link styles */
-a {
-  color: var(--primary-color); /* Matches the theme */
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-  color: var(--text-color); /* Changes to text color on hover */
-}
-
-/* Social links hover effect */
-.socials a:hover {
-  color: var(--text-color); /* Matches hover effect for consistency */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-  .profile-picture {
-    width: 100px; /* Smaller size for small screens */
-    height: 100px;
+const translations = {
+  es: {
+    "About Me": "👤 Sobre mí",
+    "Skills": "🛠️ Habilidades",
+    "Projects": "📂 Proyectos",
+    "See the Projects in Action": "🎥 Ver los proyectos en acción",
+    "Contact": "📞 Contacto",
+    "Feel free to reach out via:": "📬 No dudes en ponerte en contacto a través de:",
+    "Email": "📧 Correo electrónico",
+    "GitHub": "🐙 GitHub",
+    "LinkedIn": "🔗 LinkedIn",
+    "American Translators Association": "📜 Asociación Americana de Traductores",
+    "Software Developer": "💻 Desarrollador de Software, Traductor e Intérprete",
+    "Hi, I am @Daancoria": "👋 Hola, soy @Daancoria",
+    "I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.":
+      "🎮 Estoy interesado en el desarrollo de juegos, proyectos en Python, creación de aplicaciones interactivas y traducción e interpretación de idiomas.",
+    "Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.":
+      "💡 Actualmente trabajando en Pygame, Kivy y gestión de estados para aplicaciones web, aplicaciones móviles, juegos y mucho más.",
+    "Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.":
+      "🤝 Buscando colaborar en proyectos de juegos de código abierto, aplicaciones de cuestionarios y desafíos de programación creativa.",
+    "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
+      "🎲 Dato curioso: ¡Me encanta crear juegos basados en lógica, ajustar mecánicas para que el juego sea perfecto y explorar nuevos idiomas!",
+    "Dungeon Crawler": "Juego de calabozo",
+    "Dungeon Crawler Description": "Estoy emocionado de presentar mi juego Dungeon Crawler, una aventura retro desarrollada completamente en Python usando Pygame.",
+    "Dungeon Crawler Features": "⚔️ Explora un laberinto generado proceduralmente lleno de tesoros ocultos, paredes destructibles y enemigos inteligentes.",
+    "Dungeon Crawler Bombs": "💣 Elige entre cinco tipos diferentes de bombas, cada una con un efecto único.",
+    "Dungeon Crawler Skills": "🛠️ Desarrollé experiencia en programación orientada a objetos, diseño de arte pixelado e implementación de IA.",
+    "Dungeon Crawler Conclusion": "🎮 Si te gustan los gráficos ochenteros combinados con ingenio moderno, este proyecto es para ti.",
+    "Tetris": "Tetrix",
+    "Tetris Description": "Después de sumergirme en el desarrollo de juegos con Pygame/Kivy, ¡he creado un juego clásico de Tetris desde cero!",
+    "Tetris Skills Mastered": "💡 Habilidades dominadas:",
+    "Tetris Mechanics": "🔹 Mecánicas y lógica del juego – Implementación de detección de colisiones, rotación de piezas y mecánicas de limpieza de líneas.",
+    "Tetris State Management": "🔹 Gestión de estados – Manejo de estados del juego como ejecución, pausa y condiciones de fin de juego.",
+    "Tetris Procedural Generation": "🔹 Generación procedural – Piezas de Tetrimino aleatorias mientras se asegura un juego equilibrado.",
+    "Tetris Rendering": "🔹 Renderizado y animación – Transiciones suaves y movimiento basado en cuadrículas para una experiencia atractiva.",
+    "Tetris User Interaction": "🔹 Interacción del usuario – Integración de entradas de teclado/ratón para un juego receptivo.",
+    "Tetris Optimization": "🔹 Optimización – Rendimiento fluido y código estructurado para escalabilidad.",
+    "Tetris Conclusion": "Este proyecto fue un desafío emocionante y una gran adición a mi portafolio de desarrollo de juegos.",
+    "Flappy-ish Bird": "Flappy-ish Bird",
+    "Flappy-ish Bird Description": "¡Emocionado de compartir mi proyecto de desarrollo de juegos—Flappy-ish Bird, una versión divertida del clásico Flappy Bird, construido completamente con Python y Pygame!",
+    "Flappy-ish Bird Skills Demonstrated": "🛠️ Habilidades demostradas:",
+    "Flappy-ish Bird Physics": "✅ Desarrollo de juegos con Pygame – Implementación de física, detección de colisiones y animaciones de sprites.",
+    "Flappy-ish Bird State Management": "✅ Gestión de estados – Manejo de estados del juego, menús y entrada del usuario.",
+    "Flappy-ish Bird Randomization": "✅ Aleatorización – Fondos dinámicos y colores de tuberías para una experiencia fresca cada vez.",
+    "Flappy-ish Bird User Interaction": "✅ Interacción del usuario – Un menú de selección de color de pájaro para mejorar la participación del jugador.",
+    "Flappy-ish Bird Optimization": "✅ Optimización del rendimiento – Renderizado eficiente y juego fluido a 30 FPS.",
+    "Flappy-ish Bird Features": "🖥️ Características:",
+    "Flappy-ish Bird Customization": "🎨 Selección personalizable de pájaros – Elige entre pájaros rojos, azules o amarillos.",
+    "Flappy-ish Bird Dynamic Environments": "🌄 Entornos dinámicos – Los fondos cambian entre día y noche aleatoriamente.",
+    "Flappy-ish Bird Pipe Variations": "🚧 Variaciones de tuberías – Las tuberías alternan entre verde y rojo.",
+    "Flappy-ish Bird Gameplay": "🎮 Jugabilidad clásica de Flappy – Mecánicas simples pero adictivas.",
+    "Sudoku": "Sudoku",
+    "Sudoku Description": "Recientemente programé un juego de Sudoku en Python (usando Pygame) como un proyecto rápido para mejorar mi pensamiento lógico/algorítmico y habilidades de manejo de eventos en tiempo real.",
+    "Sudoku Highlights": "Aspectos destacados:",
+    "Sudoku Features": "• Puzzles generados automáticamente y un solucionador correspondiente.",
+    "Sudoku Mistakes": "• Hasta 3 errores permitidos (¡luego se acaba el juego!).",
+    "Sudoku Pause": "• Pausa y reanudación fáciles – el temporizador se detiene mientras está en pausa.",
+    "Sudoku Night Mode": "• Modo nocturno para sesiones nocturnas.",
+    "Sudoku Hints": "• Pistas y resolución automática para esos puntos difíciles.",
+    "Sudoku Difficulty": "• Cambia instantáneamente entre Fácil, Medio y Difícil.",
+    "Sudoku UI": "• Ventana redimensionable y UI adaptativa.",
+    "Python": "Python",
+    "Pygame": "Pygame",
+    "HTML/CSS": "HTML/CSS",
+    "JavaScript": "JavaScript",
+    "Git/GitHub": "Git/GitHub",
+    "Game development": "Desarrollo de juegos",
+    "Object-oriented programming": "Programación orientada a objetos",
+    "Responsive design": "Diseño adaptable",
+    "Problem-solving": "Resolución de problemas",
+    "English": "Inglés",
+    "Spanish": "Español",
+    "French": "Francés",
+    "Italian": "Italiano",
+    "See the Projects in Action": "Ver los proyectos en acción",
+    "Video Not Supported": "Tu navegador no soporta el video.",
+    "Footer": "© 2025 Daniel Anievas Coria",
+    "Alien Invasion Game": "👾 Juego de Invasión Alienígena",
+    "Alien Invasion Description": "🌌 Un emocionante juego de disparos en el espacio donde defiendes la Tierra de oleadas de invasores alienígenas. Desarrollado con Python y Pygame.",
+    "Alien Invasion Features": "🛸 Características: Niveles progresivos, enemigos dinámicos y un sistema de puntuación.",
+    "Alien Invasion Skills": "🛠️ Habilidades demostradas: Programación orientada a objetos, diseño de niveles y animaciones de sprites.",
+    "Pokemon API Integration": "🎮 Integración de la API de Pokémon",
+    "Pokemon API Description": "🔍 Una aplicación interactiva que utiliza la API de Pokémon para mostrar información detallada sobre tus Pokémon favoritos.",
+    "Pokemon API Features": "📋 Características: Búsqueda por nombre, estadísticas detalladas y una interfaz amigable.",
+    "Pokemon API Skills": "🛠️ Habilidades demostradas: Consumo de API REST, manejo de datos JSON y diseño de interfaces dinámicas.",
+    "Alien Invasion Smooth Controls": "Controles suaves de la nave con movimiento multidireccional",
+    "Alien Invasion Dynamic Fleet": "Una flota alienígena dinámica que reacciona a los bordes de la pantalla",
+    "Alien Invasion Bullet Firing": "Disparo de balas con límites y detección de colisiones",
+    "Alien Invasion Score System": "Seguimiento de puntuación y sistema de vidas",
+    "Alien Invasion Game States": "Estados del juego: inicio, pausa, fin del juego y reinicio",
+    "Alien Invasion Custom Sprites": "Sprites personalizados y fondo para una sensación pulida",
+    "Alien Invasion Tech Stack": "💻 Pila tecnológica:",
+    "Alien Invasion Tech Details": "Python | Pygame | Diseño OOP",
+    "Alien Invasion Conclusion": "🎯 Esta fue una gran oportunidad para profundizar en bucles de juego, manejo de eventos, gestión de sprites y mecánicas de colisión. Además, implementar una base de código modular hizo que iterar fuera un placer.",
+    "Pokemon API Async": "JavaScript asíncrono (async/await): Manejo fluido de llamadas a la API y obtención de datos con manejo adecuado de errores para garantizar una experiencia de usuario sin problemas.",
+    "Pokemon API DOM Manipulation": "Manipulación del DOM: Actualización dinámica del contenido de la página sin recargas utilizando JavaScript nativo para crear una interfaz atractiva.",
+    "Pokemon API Fetch": "Fetch API: Integración de fuentes de datos de terceros y manejo efectivo de respuestas de API.",
+    "Pokemon API Clean Code": "Código limpio y mantenible: Énfasis en claridad, modularidad y lógica amigable para el usuario para garantizar legibilidad y escalabilidad.",
+    "Pokemon API Responsive Design": "Diseño web adaptable: Estilizado con CSS para garantizar la usabilidad en diferentes tamaños de pantalla y dispositivos.",
+    "Pokemon API Error Handling": "Retroalimentación al usuario y manejo de errores: Implementación de mensajes significativos y estados de respaldo para entradas inválidas o fallos en llamadas a la API.",
+    "Pokemon API Final Note": "💡 Es un gran ejemplo de cómo llevar datos externos a una interfaz elegante mientras se mantiene el rendimiento y la usabilidad en mente.",
+  },
+  fr: {
+    "About Me": "👤 À propos de moi",
+    "Skills": "🛠️ Compétences",
+    "Projects": "📂 Projets",
+    "See the Projects in Action": "🎥 Voir les projets en action",
+    "Contact": "📞 Contact",
+    "Feel free to reach out via:": "📬 N'hésitez pas à me contacter via :",
+    "Email": "📧 E-mail",
+    "GitHub": "🐙 GitHub",
+    "LinkedIn": "🔗 LinkedIn",
+    "American Translators Association": "📜 Association Américaine des Traducteurs",
+    "Software Developer": "💻 Développeur de logiciels, traducteur et interprète",
+    "Hi, I am @Daancoria": "👋 Bonjour, je suis @Daancoria",
+    "I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.":
+      "🎮 Je m'intéresse au développement de jeux, aux projets Python, à la création d'applications interactives et à la traduction et l'interprétation de langues.",
+    "Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.":
+      "💡 Actuellement en train de travailler sur Pygame, Kivy et la gestion d'état pour les applications web, les applications mobiles, les jeux et bien plus encore.",
+    "Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.":
+      "🤝 Je cherche à collaborer sur des projets de jeux open-source, des applications de quiz et des défis de programmation créative.",
+    "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
+      "🎲 Fait amusant : J'adore créer des jeux basés sur la logique, ajuster les mécaniques pour que le gameplay soit parfait et explorer de nouvelles langues !",
+    "Dungeon Crawler": "Explorateur de Donjons",
+    "Dungeon Crawler Description": "Je suis ravi de présenter mon jeu Dungeon Crawler, une aventure rétro développée entièrement en Python avec Pygame.",
+    "Dungeon Crawler Features": "⚔️ Explorez un labyrinthe généré procéduralement rempli de trésors cachés, de murs destructibles et d'ennemis astucieux.",
+    "Dungeon Crawler Bombs": "💣 Choisissez parmi cinq types de bombes différents, chacun offrant une stratégie unique.",
+    "Dungeon Crawler Skills": "🛠️ J'ai acquis de l'expérience en programmation orientée objet, en conception d'art pixelisé et en implémentation d'IA.",
+    "Dungeon Crawler Conclusion": "🎮 Si vous aimez les graphismes nostalgiques combinés à l'ingéniosité moderne, ce projet est fait pour vous.",
+    "Tetris": "Tetris",
+    "Tetris Description": "Après m'être plongé dans le développement de jeux avec Pygame/Kivy, j'ai créé un jeu classique de Tetris de A à Z !",
+    "Tetris Skills Mastered": "💡 Compétences maîtrisées :",
+    "Tetris Mechanics": "🔹 Mécaniques et logique du jeu – Implémentation de la détection des collisions, rotation des pièces et mécaniques de nettoyage des lignes.",
+    "Tetris State Management": "🔹 Gestion des états – Gestion des états du jeu tels que l'exécution, la pause et les conditions de fin de jeu.",
+    "Tetris Procedural Generation": "🔹 Génération procédurale – Pièces de Tetrimino aléatoires tout en assurant un jeu équilibré.",
+    "Tetris Rendering": "🔹 Rendu et animation – Transitions fluides et mouvement basé sur une grille pour une expérience attrayante.",
+    "Tetris User Interaction": "🔹 Interaction utilisateur – Intégration des entrées clavier/souris pour un jeu réactif.",
+    "Tetris Optimization": "🔹 Optimisation – Performance fluide et code structuré pour l'évolutivité.",
+    "Tetris Conclusion": "Ce projet a été un défi passionnant et une excellente addition à mon portfolio de développement de jeux.",
+    "Flappy-ish Bird": "Flappy-ish Bird",
+    "Flappy-ish Bird Description": "Je suis ravi de partager mon projet de développement de jeux—Flappy-ish Bird, une version amusante du classique Flappy Bird, entièrement construit avec Python et Pygame !",
+    "Flappy-ish Bird Skills Demonstrated": "🛠️ Compétences démontrées :",
+    "Flappy-ish Bird Physics": "✅ Développement de jeux avec Pygame – Implémentation de la physique, détection des collisions et animations de sprites.",
+    "Flappy-ish Bird State Management": "✅ Gestion des états – Gestion des états du jeu, des menus et des entrées utilisateur.",
+    "Flappy-ish Bird Randomization": "✅ Aléatorisation – Arrière-plans dynamiques et couleurs des tuyaux pour une expérience fraîche à chaque fois.",
+    "Flappy-ish Bird User Interaction": "✅ Interaction utilisateur – Un menu de sélection de couleur d'oiseau pour améliorer l'engagement du joueur.",
+    "Flappy-ish Bird Optimization": "✅ Optimisation des performances – Rendu efficace et jeu fluide à 30 FPS.",
+    "Flappy-ish Bird Features": "🖥️ Caractéristiques :",
+    "Flappy-ish Bird Customization": "🎨 Sélection personnalisable d'oiseaux – Choisissez parmi des oiseaux rouges, bleus ou jaunes.",
+    "Flappy-ish Bird Dynamic Environments": "🌄 Environnements dynamiques – Les arrière-plans changent entre jour et nuit aléatoirement.",
+    "Flappy-ish Bird Pipe Variations": "🚧 Variations des tuyaux – Les tuyaux alternent entre vert et rouge.",
+    "Flappy-ish Bird Gameplay": "🎮 Jouabilité classique de Flappy – Mécaniques simples mais addictives.",
+    "Sudoku": "Sudoku",
+    "Sudoku Description": "J'ai récemment programmé un jeu de Sudoku en Python (avec Pygame) comme projet rapide pour améliorer ma pensée logique/algorithmique et mes compétences de gestion des événements en temps réel.",
+    "Sudoku Highlights": "Points forts :",
+    "Sudoku Features": "• Puzzles générés automatiquement et un solveur correspondant.",
+    "Sudoku Mistakes": "• Jusqu'à 3 erreurs permises (puis c'est game over !).",
+    "Sudoku Pause": "• Pause et reprise faciles – le chronomètre s'arrête pendant la pause.",
+    "Sudoku Night Mode": "• Mode nuit pour les sessions nocturnes.",
+    "Sudoku Hints": "• Indices et résolution automatique pour ces points difficiles.",
+    "Sudoku Difficulty": "• Changez instantanément entre Facile, Moyen et Difficile.",
+    "Sudoku UI": "• Fenêtre redimensionnable et UI adaptative.",
+    "Python": "Python",
+    "Pygame": "Pygame",
+    "HTML/CSS": "HTML/CSS",
+    "JavaScript": "JavaScript",
+    "Git/GitHub": "Git/GitHub",
+    "Game development": "Développement de jeux",
+    "Object-oriented programming": "Programmation orientée objet",
+    "Responsive design": "Conception adaptative",
+    "Problem-solving": "Résolution de problèmes",
+    "English": "Anglais",
+    "Spanish": "Espagnol",
+    "French": "Français",
+    "Italian": "Italien",
+    "See the Projects in Action": "Voir les projets en action",
+    "Video Not Supported": "Votre navigateur ne prend pas en charge la vidéo.",
+    "Footer": "© 2025 Daniel Anievas Coria",
+    "Alien Invasion Game": "👾 Jeu d'Invasion Alien",
+    "Alien Invasion Description": "🌌 Un jeu de tir spatial palpitant où vous défendez la Terre contre des vagues d'envahisseurs extraterrestres. Développé avec Python et Pygame.",
+    "Alien Invasion Features": "🛸 Caractéristiques : Niveaux progressifs, ennemis dynamiques et système de score.",
+    "Alien Invasion Skills": "🛠️ Compétences démontrées : Programmation orientée objet, conception de niveaux et animations de sprites.",
+    "Pokemon API Integration": "🎮 Intégration de l'API Pokémon",
+    "Pokemon API Description": "🔍 Une application interactive utilisant l'API Pokémon pour afficher des informations détaillées sur vos Pokémon préférés.",
+    "Pokemon API Features": "📋 Caractéristiques : Recherche par nom, statistiques détaillées et interface conviviale.",
+    "Pokemon API Skills": "🛠️ Compétences démontrées : Consommation d'API REST, gestion des données JSON et conception d'interfaces dynamiques.",
+    "Alien Invasion Smooth Controls": "Contrôles fluides du vaisseau avec mouvement multidirectionnel",
+    "Alien Invasion Dynamic Fleet": "Une flotte alien dynamique qui réagit aux bords de l'écran",
+    "Alien Invasion Bullet Firing": "Tir de balles avec limites et détection des collisions",
+    "Alien Invasion Score System": "Suivi des scores et système de vies",
+    "Alien Invasion Game States": "États du jeu : démarrage, pause, fin de jeu et redémarrage",
+    "Alien Invasion Custom Sprites": "Sprites personnalisés et arrière-plan pour une sensation soignée",
+    "Alien Invasion Tech Stack": "💻 Pile technologique :",
+    "Alien Invasion Tech Details": "Python | Pygame | Conception OOP",
+    "Alien Invasion Conclusion": "🎯 Ce fut une excellente opportunité pour approfondir les boucles de jeu, la gestion des événements, la gestion des sprites et les mécaniques de collision. De plus, la mise en œuvre d'une base de code modulaire a rendu l'itération agréable.",
+    "Pokemon API Async": "JavaScript asynchrone (async/await) : Gestion fluide des appels API et récupération des données avec une gestion appropriée des erreurs pour garantir une expérience utilisateur fluide.",
+    "Pokemon API DOM Manipulation": "Manipulation du DOM : Mise à jour dynamique du contenu de la page sans rechargement en utilisant JavaScript natif pour créer une interface attrayante.",
+    "Pokemon API Fetch": "Fetch API : Intégration de sources de données tierces et gestion efficace des réponses API.",
+    "Pokemon API Clean Code": "Code propre et maintenable : Accent mis sur la clarté, la modularité et une logique conviviale pour garantir lisibilité et évolutivité.",
+    "Pokemon API Responsive Design": "Conception web réactive : Stylisé avec CSS pour garantir l'utilisabilité sur différentes tailles d'écran et appareils.",
+    "Pokemon API Error Handling": "Retour utilisateur et gestion des erreurs : Mise en œuvre de messages significatifs et d'états de secours pour les entrées invalides ou les échecs d'appels API.",
+    "Pokemon API Final Note": "💡 C'est un excellent exemple de la façon d'intégrer des données externes dans une interface élégante tout en gardant à l'esprit les performances et l'utilisabilité.",
+  },
+  it: {
+    "About Me": "👤 Chi sono",
+    "Skills": "🛠️ Competenze",
+    "Projects": "📂 Progetti",
+    "See the Projects in Action": "🎥 Guarda i progetti in azione",
+    "Contact": "📞 Contatto",
+    "Feel free to reach out via:": "📬 Sentiti libero di contattarmi tramite:",
+    "Email": "📧 Email",
+    "GitHub": "🐙 GitHub",
+    "LinkedIn": "🔗 LinkedIn",
+    "American Translators Association": "📜 Associazione Americana Traduttori",
+    "Software Developer": "💻 Sviluppatore di Software, traduttore e interprete",
+    "Hi, I am @Daancoria": "👋 Ciao, sono @Daancoria",
+    "I am interested in game development, Python projects, building interactive applications, and languages translation and interpretation.":
+      "🎮 Sono interessato allo sviluppo di giochi, progetti in Python, creazione di applicazioni interattive e traduzione e interpretazione di lingue.",
+    "Currently working on Pygame, Kivy, and state management for web applications, mobile apps, games and much more.":
+      "💡 Attualmente sto lavorando su Pygame, Kivy e gestione dello stato per applicazioni web, app mobili, giochi e molto altro.",
+    "Looking to collaborate on open-source game projects, quiz applications, and creative coding challenges.":
+      "🤝 Cerco di collaborare a progetti di giochi open-source, applicazioni di quiz e sfide di programmazione creativa.",
+    "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
+      "🎲 Curiosità: Adoro creare giochi basati sulla logica, modificare le meccaniche per rendere il gameplay perfetto ed esplorare nuove lingue!",
+    "Dungeon Crawler": "Esploratore di Dungeon",
+    "Dungeon Crawler Description": "Sono entusiasta di presentare il mio gioco Dungeon Crawler, un'avventura retrò sviluppata interamente in Python usando Pygame.",
+    "Dungeon Crawler Features": "⚔️ Esplora un labirinto generato proceduralmente pieno di tesori nascosti, muri distruttibili e nemici astuti.",
+    "Dungeon Crawler Bombs": "💣 Scegli tra cinque diversi tipi di bombe, ognuna con una strategia unica.",
+    "Dungeon Crawler Skills": "🛠️ Ho acquisito esperienza nella programmazione orientata agli oggetti, nel design di pixel art e nell'implementazione di IA.",
+    "Dungeon Crawler Conclusion": "🎮 Se ami la grafica nostalgica combinata con l'ingegnosità moderna, questo progetto fa per te.",
+    "Tetris": "Tetris",
+    "Tetris Description": "Dopo essermi immerso nello sviluppo di giochi con Pygame/Kivy, ho creato un gioco classico di Tetris da zero!",
+    "Tetris Skills Mastered": "💡 Competenze padroneggiate:",
+    "Tetris Mechanics": "🔹 Meccaniche e logica del gioco – Implementazione del rilevamento delle collisioni, rotazione dei pezzi e meccaniche di pulizia delle linee.",
+    "Tetris State Management": "🔹 Gestione degli stati – Gestione degli stati del gioco come esecuzione, pausa e condizioni di fine gioco.",
+    "Tetris Procedural Generation": "🔹 Generazione procedurale – Pezzi di Tetrimino casuali garantendo un gioco equilibrato.",
+    "Tetris Rendering": "🔹 Rendering e animazione – Transizioni fluide e movimento basato su griglia per un'esperienza coinvolgente.",
+    "Tetris User Interaction": "🔹 Interazione dell'utente – Integrazione delle entrate da tastiera/mouse per un gioco reattivo.",
+    "Tetris Optimization": "🔹 Ottimizzazione – Prestazioni fluide e codice strutturato per la scalabilità.",
+    "Tetris Conclusion": "Questo progetto è stato una sfida entusiasmante e una grande aggiunta al mio portfolio di sviluppo di giochi.",
+    "Flappy-ish Bird": "Flappy-ish Bird",
+    "Flappy-ish Bird Description": "Sono entusiasta di condividere il mio progetto di sviluppo di giochi—Flappy-ish Bird, una versione divertente del classico Flappy Bird, costruito completamente con Python e Pygame!",
+    "Flappy-ish Bird Skills Demonstrated": "🛠️ Competenze dimostrate:",
+    "Flappy-ish Bird Physics": "✅ Sviluppo di giochi con Pygame – Implementazione della fisica, rilevamento delle collisioni e animazioni degli sprite.",
+    "Flappy-ish Bird State Management": "✅ Gestione degli stati – Gestione degli stati del gioco, dei menu e delle entrate dell'utente.",
+    "Flappy-ish Bird Randomization": "✅ Randomizzazione – Sfondi dinamici e colori dei tubi per un'esperienza fresca ogni volta.",
+    "Flappy-ish Bird User Interaction": "✅ Interazione dell'utente – Un menu di selezione del colore dell'uccello per migliorare il coinvolgimento del giocatore.",
+    "Flappy-ish Bird Optimization": "✅ Ottimizzazione delle prestazioni – Rendering efficiente e gioco fluido a 30 FPS.",
+    "Flappy-ish Bird Features": "🖥️ Caratteristiche:",
+    "Flappy-ish Bird Customization": "🎨 Selezione personalizzabile degli uccelli – Scegli tra uccelli rossi, blu o gialli.",
+    "Flappy-ish Bird Dynamic Environments": "🌄 Ambienti dinamici – Gli sfondi cambiano tra giorno e notte casualmente.",
+    "Flappy-ish Bird Pipe Variations": "🚧 Variazioni dei tubi – I tubi alternano tra verde e rosso.",
+    "Flappy-ish Bird Gameplay": "🎮 Giocabilità classica di Flappy – Meccaniche semplici ma coinvolgenti.",
+    "Sudoku": "Sudoku",
+    "Sudoku Description": "Ho recentemente programmato un gioco di Sudoku in Python (usando Pygame) come progetto rapido per migliorare il mio pensiero logico/algoritmico e le abilità di gestione degli eventi in tempo reale.",
+    "Sudoku Highlights": "Punti salienti:",
+    "Sudoku Features": "• Puzzle generati automaticamente e un risolutore corrispondente.",
+    "Sudoku Mistakes": "• Fino a 3 errori permessi (poi è game over!).",
+    "Sudoku Pause": "• Pausa e ripresa facili – il timer si ferma durante la pausa.",
+    "Sudoku Night Mode": "• Modalità notturna per sessioni notturne.",
+    "Sudoku Hints": "• Suggerimenti e risoluzione automatica per quei punti difficili.",
+    "Sudoku Difficulty": "• Cambia istantaneamente tra Facile, Medio e Difficile.",
+    "Sudoku UI": "• Finestra ridimensionabile e UI adattiva.",
+    "Python": "Python",
+    "Pygame": "Pygame",
+    "HTML/CSS": "HTML/CSS",
+    "JavaScript": "JavaScript",
+    "Git/GitHub": "Git/GitHub",
+    "Game development": "Sviluppo di giochi",
+    "Object-oriented programming": "Programmazione orientata agli oggetti",
+    "Responsive design": "Design reattivo",
+    "Problem-solving": "Risoluzione dei problemi",
+    "English": "Inglese",
+    "Spanish": "Spagnolo",
+    "French": "Francese",
+    "Italian": "Italiano",
+    "See the Projects in Action": "Guarda i progetti in azione",
+    "Video Not Supported": "Il tuo browser non supporta il video.",
+    "Footer": "© 2025 Daniel Anievas Coria",
+    "Alien Invasion Game": "👾 Gioco di Invasione Aliena",
+    "Alien Invasion Description": "🌌 Un emozionante gioco sparatutto spaziale in cui difendi la Terra da ondate di invasori alieni. Sviluppato con Python e Pygame.",
+    "Alien Invasion Features": "🛸 Caratteristiche: Livelli progressivi, nemici dinamici e sistema di punteggio.",
+    "Alien Invasion Skills": "🛠️ Competenze dimostrate: Programmazione orientata agli oggetti, progettazione di livelli e animazioni di sprite.",
+    "Pokemon API Integration": "🎮 Integrazione API Pokémon",
+    "Pokemon API Description": "🔍 Un'applicazione interattiva che utilizza l'API Pokémon per mostrare informazioni dettagliate sui tuoi Pokémon preferiti.",
+    "Pokemon API Features": "📋 Caratteristiche: Ricerca per nome, statistiche dettagliate e interfaccia user-friendly.",
+    "Pokemon API Skills": "🛠️ Competenze dimostrate: Consumo di API REST, gestione dei dati JSON e progettazione di interfacce dinamiche.",
+    "Alien Invasion Smooth Controls": "Controlli fluidi della nave con movimento multidirezionale",
+    "Alien Invasion Dynamic Fleet": "Una flotta aliena dinamica che reagisce ai bordi dello schermo",
+    "Alien Invasion Bullet Firing": "Sparo di proiettili con limiti e rilevamento delle collisioni",
+    "Alien Invasion Score System": "Tracciamento del punteggio e sistema di vite",
+    "Alien Invasion Game States": "Stati del gioco: avvio, pausa, fine del gioco e riavvio",
+    "Alien Invasion Custom Sprites": "Sprite personalizzati e sfondo per un aspetto rifinito",
+    "Alien Invasion Tech Stack": "💻 Stack tecnologico:",
+    "Alien Invasion Tech Details": "Python | Pygame | Design OOP",
+    "Alien Invasion Conclusion": "🎯 Questa è stata una grande opportunità per approfondire i cicli di gioco, la gestione degli eventi, la gestione degli sprite e le meccaniche di collisione. Inoltre, implementare una base di codice modulare ha reso l'iterazione un piacere.",
+    "Pokemon API Async": "JavaScript asincrono (async/await): Gestione fluida delle chiamate API e recupero dei dati con una gestione adeguata degli errori per garantire un'esperienza utente fluida.",
+    "Pokemon API DOM Manipulation": "Manipolazione del DOM: Aggiornamento dinamico del contenuto della pagina senza ricariche utilizzando JavaScript nativo per creare un'interfaccia coinvolgente.",
+    "Pokemon API Fetch": "Fetch API: Integrazione di fonti di dati di terze parti e gestione efficace delle risposte API.",
+    "Pokemon API Clean Code": "Codice pulito e mantenibile: Enfasi su chiarezza, modularità e logica user-friendly per garantire leggibilità e scalabilità.",
+    "Pokemon API Responsive Design": "Design web reattivo: Stilizzato con CSS per garantire usabilità su diverse dimensioni di schermo e dispositivi.",
+    "Pokemon API Error Handling": "Feedback utente e gestione degli errori: Implementazione di messaggi significativi e stati di fallback per input non validi o errori nelle chiamate API.",
+    "Pokemon API Final Note": "💡 È un ottimo esempio di come portare dati esterni in un'interfaccia elegante mantenendo prestazioni e usabilità in mente.",
+  },
+};
+function translatePage(language) {
+    const elements = document.querySelectorAll("[data-translate]");
+    elements.forEach((element) => {
+      const key = element.getAttribute("data-translate");
+      if (language === "en") {
+        // Reset to original text
+        element.textContent = element.dataset.originalText || element.textContent;
+      } else {
+        // Save original text if not already saved
+        if (!element.dataset.originalText) {
+          element.dataset.originalText = element.textContent;
+        }
+        // Translate text
+        element.textContent = translations[language][key] || element.textContent;
+      }
+    });
   }
-
-  header h1 {
-    font-size: 2rem; /* Adjust header font size */
-  }
-
-  header p {
-    font-size: 1rem; /* Adjust paragraph font size */
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  .project-card {
-    padding: 0.5rem;
-  }
-
-  .project-thumbnail {
-    max-width: 100%;
-  }
-
-  .nav-links {
-    flex-direction: column; /* Stack navigation links vertically */
-    gap: 1rem;
-  }
-
-  .project-card, .video-card {
-    padding: 1rem;
-  }
-
-  .project-thumbnail, video {
-    max-width: 100%;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-}
-
-/* Keyframes for animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  
+  document.getElementById("language").addEventListener("change", (event) => {
+    const selectedLanguage = event.target.value;
+    translatePage(selectedLanguage);
+  });
