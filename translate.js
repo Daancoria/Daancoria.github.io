@@ -303,25 +303,42 @@ const translations = {
     "Pokemon API Final Note": "💡 È un ottimo esempio di come portare dati esterni in un'interfaccia elegante mantenendo prestazioni e usabilità in mente.",
   },
 };
+
 function translatePage(language) {
-    const elements = document.querySelectorAll("[data-translate]");
-    elements.forEach((element) => {
-      const key = element.getAttribute("data-translate");
-      if (language === "en") {
-        // Reset to original text
-        element.textContent = element.dataset.originalText || element.textContent;
-      } else {
-        // Save original text if not already saved
-        if (!element.dataset.originalText) {
-          element.dataset.originalText = element.textContent;
-        }
-        // Translate text
-        element.textContent = translations[language][key] || element.textContent;
+  const elements = document.querySelectorAll("[data-translate]");
+  elements.forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (language === "en") {
+      // Reset to original text
+      element.textContent = element.dataset.originalText || element.textContent;
+    } else {
+      // Save original text if not already saved
+      if (!element.dataset.originalText) {
+        element.dataset.originalText = element.textContent;
       }
-    });
-  }
-  
-  document.getElementById("language").addEventListener("change", (event) => {
-    const selectedLanguage = event.target.value;
-    translatePage(selectedLanguage);
+      // Translate text
+      element.textContent = translations[language][key] || element.textContent;
+    }
   });
+}
+
+document.getElementById("language").addEventListener("change", (event) => {
+  const selectedLanguage = event.target.value;
+  translatePage(selectedLanguage);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
+
+  dropdownToggle.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("active");
+  });
+
+  // Close the dropdown if clicked outside
+  document.addEventListener("click", (event) => {
+    if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+      dropdownMenu.classList.remove("active");
+    }
+  });
+});
