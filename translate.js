@@ -304,24 +304,24 @@ const translations = {
   },
 };
 function translatePage(language) {
-  const elements = document.querySelectorAll("[data-translate]");
-  elements.forEach((element) => {
-    const key = element.getAttribute("data-translate");
-    if (language === "en") {
-      // Reset to original text
-      element.textContent = element.dataset.originalText || element.textContent;
-    } else {
-      // Save original text if not already saved
-      if (!element.dataset.originalText) {
-        element.dataset.originalText = element.textContent;
+    const elements = document.querySelectorAll("[data-translate]");
+    elements.forEach((element) => {
+      const key = element.getAttribute("data-translate");
+      if (language === "en") {
+        // Reset to original text
+        element.textContent = element.dataset.originalText || element.textContent;
+      } else {
+        // Save original text if not already saved
+        if (!element.dataset.originalText) {
+          element.dataset.originalText = element.textContent;
+        }
+        // Translate text
+        element.textContent = translations[language][key] || element.textContent;
       }
-      // Translate text
-      element.textContent = translations[language][key] || element.textContent;
-    }
+    });
+  }
+  
+  document.getElementById("language").addEventListener("change", (event) => {
+    const selectedLanguage = event.target.value;
+    translatePage(selectedLanguage);
   });
-}
-
-document.getElementById("language").addEventListener("change", (event) => {
-  const selectedLanguage = event.target.value;
-  translatePage(selectedLanguage);
-});
