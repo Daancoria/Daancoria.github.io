@@ -119,6 +119,12 @@ const translations = {
     "Marvel Character Explorer Features": "🧬 Búsqueda por nombre de superhéroe, navegación por tarjetas, detalles de personajes y diseño responsive.",
     "Marvel Character Explorer Skills": "🛠️ Habilidades demostradas: consumo de API pública de Marvel, manejo de eventos en DOM, promesas y manejo de errores en JavaScript.",
     "Marvel Character Explorer Conclusion": "📚 Un proyecto ideal para quienes desean conectar frontend con APIs potentes en un entorno divertido y familiar.",
+    "Event Center": "Centro de Eventos",
+    "Event Center Description": "🎟️ Un proyecto de varias páginas usando HTML/CSS/JavaScript que muestra un sitio web completamente responsivo para un centro de eventos, con navegación y manejo de formularios.",
+    "Event Center Features": "📋 Páginas incluidas: Inicio (con banner y Sobre Nosotros), Eventos (con detalles estructurados), Menú (tabla de elementos), Ubicación (con mapa incrustado) y Contacto (formulario con validación).",
+    "Event Center Skills": "🛠️ Habilidades demostradas: diseño responsivo, HTML semántico, diseño con Flexbox/Grid, validación de formularios en el cliente, media queries y vinculación entre páginas.",
+    "Event Center Requirements": "✅ Requisitos del Proyecto Cumplidos: Barra de navegación en todas las páginas • Imagen principal, mensaje de bienvenida y eventos destacados en la página de inicio • Uso de article/section para eventos • Menú en formato tabla con categorías • Mapa incrustado en la página de ubicación • Formulario de contacto validado • Diseño responsivo con CSS grid/flexbox y efectos hover",
+    "Event Center Conclusion": "📌 Un proyecto frontend inspirado en un caso real, centrado en la organización del diseño, usabilidad y adaptabilidad para una experiencia multipágina.",
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -240,6 +246,12 @@ const translations = {
     "Marvel Character Explorer Features": "🧬 Recherche par nom de super-héros, navigation par cartes, détails des personnages et design réactif.",
     "Marvel Character Explorer Skills": "🛠️ Compétences démontrées : utilisation de l'API publique de Marvel, gestion des événements DOM, promesses et gestion des erreurs en JavaScript.",
     "Marvel Character Explorer Conclusion": "📚 Un projet idéal pour connecter le frontend à des API puissantes dans un univers familier et amusant.",
+    "Event Center": "Centre d'Événements",
+    "Event Center Description": "🎟️ Un projet multi-pages en HTML/CSS/JavaScript présentant un site web responsive pour un centre d'événements, avec navigation et formulaire.",
+    "Event Center Features": "📋 Pages incluses : Accueil (avec bannière et À propos), Événements (avec détails structurés), Menu (tableau), Localisation (avec carte intégrée) et Contact (formulaire avec validation).",
+    "Event Center Skills": "🛠️ Compétences démontrées : design responsive, HTML sémantique, mise en page Flexbox/Grid, validation de formulaire côté client, media queries et liens entre pages.",
+    "Event Center Requirements": "✅ Exigences du projet remplies : barre de navigation sur toutes les pages • Image principale, message de bienvenue et événements en vedette sur la page d'accueil • Utilisation d'article/section pour les événements • Menu sous forme de tableau avec catégories • Carte intégrée sur la page de localisation • Formulaire de contact validé • Mise en page responsive avec CSS grid/flexbox et effets au survol",
+    "Event Center Conclusion": "📌 Un projet frontend inspiré du monde réel, axé sur l'organisation du contenu, la convivialité et la réactivité pour une expérience multi-pages.",
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -361,6 +373,12 @@ const translations = {
     "Marvel Character Explorer Features": "🧬 Ricerca per nome di supereroe, navigazione tramite card, dettagli dei personaggi e design reattivo.",
     "Marvel Character Explorer Skills": "🛠️ Competenze dimostrate: uso dell'API pubblica Marvel, gestione eventi DOM, promesse e gestione errori in JavaScript.",
     "Marvel Character Explorer Conclusion": "📚 Un progetto ideale per chi vuole collegare il frontend ad API potenti in un ambiente divertente e familiare.",
+    "Event Center": "Centro Eventi",
+    "Event Center Description": "🎟️ Un progetto HTML/CSS/JavaScript multi-pagina che mostra un sito web responsive per un centro eventi, con navigazione e gestione dei moduli.",
+    "Event Center Features": "📋 Pagine incluse: Home (con banner e Chi siamo), Eventi (con dettagli strutturati), Menù (tabella), Posizione (con mappa integrata) e Contatti (modulo con validazione).",
+    "Event Center Skills": "🛠️ Competenze dimostrate: design responsive, HTML semantico, layout con Flexbox/Grid, validazione dei moduli lato client, media queries e collegamento tra pagine.",
+    "Event Center Requirements": "✅ Requisiti del progetto soddisfatti: barra di navigazione in tutte le pagine • Immagine hero, messaggio di benvenuto ed eventi in evidenza nella Home • Uso di article/section per gli eventi • Menù in formato tabella con categorie • Mappa integrata nella pagina della posizione • Modulo di contatto validato • Layout responsive con CSS grid/flexbox ed effetti hover",
+    "Event Center Conclusion": "📌 Un progetto frontend ispirato al mondo reale focalizzato su organizzazione del layout, usabilità e reattività per un'esperienza multi-pagina.",
   },
 };
 
