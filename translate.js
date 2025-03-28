@@ -99,6 +99,11 @@ const translations = {
     "Pokemon API Responsive Design": "Diseño web adaptable: Estilizado con CSS para garantizar la usabilidad en diferentes tamaños de pantalla y dispositivos.",
     "Pokemon API Error Handling": "Retroalimentación al usuario y manejo de errores: Implementación de mensajes significativos y estados de respaldo para entradas inválidas o fallos en llamadas a la API.",
     "Pokemon API Final Note": "💡 Es un gran ejemplo de cómo llevar datos externos a una interfaz elegante mientras se mantiene el rendimiento y la usabilidad en mente.",
+    "Trivia with React": "Trivia con React",
+    "Trivia React Description": "🧠 Una aplicación de trivia tipo cuestionario construida con React que obtiene preguntas de la API Open Trivia DB.",
+    "Trivia React Features": "🎯 Características como selección de categoría, filtros de dificultad, seguimiento de puntuación y transiciones suaves entre componentes.",
+    "Trivia React Skills": "🛠️ Manejo de estado en React (useState/useEffect), estructura de componentes, paso de props y obtención asíncrona de datos.",
+    "Trivia React Conclusion": "📚 Este proyecto demuestra dominio del frontend y enfoque en UX en un formato de trivia atractivo—¡perfecto para los amantes de los quizzes!"
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -200,6 +205,11 @@ const translations = {
     "Pokemon API Responsive Design": "Conception web réactive : Stylisé avec CSS pour garantir l'utilisabilité sur différentes tailles d'écran et appareils.",
     "Pokemon API Error Handling": "Retour utilisateur et gestion des erreurs : Mise en œuvre de messages significatifs et d'états de secours pour les entrées invalides ou les échecs d'appels API.",
     "Pokemon API Final Note": "💡 C'est un excellent exemple de la façon d'intégrer des données externes dans une interface élégante tout en gardant à l'esprit les performances et l'utilisabilité.",
+    "Trivia with React": "Trivia avec React",
+    "Trivia React Description": "🧠 Une application de quiz construite avec React qui récupère dynamiquement des questions depuis l'API Open Trivia DB.",
+    "Trivia React Features": "🎯 Fonctions : sélection de catégorie, filtres de difficulté, suivi des scores et transitions fluides entre composants.",
+    "Trivia React Skills": "🛠️ Gestion d'état avec React (useState/useEffect), structure des composants, passage de props et requêtes asynchrones.",
+    "Trivia React Conclusion": "📚 Ce projet montre une maîtrise du frontend et un souci de l'UX dans un format de quiz engageant—parfait pour les amateurs de trivia !"
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -301,6 +311,11 @@ const translations = {
     "Pokemon API Responsive Design": "Design web reattivo: Stilizzato con CSS per garantire usabilità su diverse dimensioni di schermo e dispositivi.",
     "Pokemon API Error Handling": "Feedback utente e gestione degli errori: Implementazione di messaggi significativi e stati di fallback per input non validi o errori nelle chiamate API.",
     "Pokemon API Final Note": "💡 È un ottimo esempio di come portare dati esterni in un'interfaccia elegante mantenendo prestazioni e usabilità in mente.",
+    "Trivia with React": "Trivia con React",
+    "Trivia React Description": "🧠 Un'applicazione trivia in stile quiz sviluppata con React che recupera dinamicamente le domande dall'API Open Trivia DB.",
+    "Trivia React Features": "🎯 Funzionalità come selezione della categoria, filtri di difficoltà, tracciamento del punteggio e transizioni fluide dei componenti.",
+    "Trivia React Skills": "🛠️ Gestione dello stato in React (useState/useEffect), struttura dei componenti, passaggio di props e recupero asincrono dei dati.",
+    "Trivia React Conclusion": "📚 Questo progetto dimostra competenze frontend e attenzione all'esperienza utente in un formato quiz coinvolgente—perfetto per gli amanti della trivia!"
   },
 };
 
