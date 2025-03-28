@@ -104,6 +104,11 @@ const translations = {
     "Trivia React Features": "🎯 Características como selección de categoría, filtros de dificultad, seguimiento de puntuación y transiciones suaves entre componentes.",
     "Trivia React Skills": "🛠️ Manejo de estado en React (useState/useEffect), estructura de componentes, paso de props y obtención asíncrona de datos.",
     "Trivia React Conclusion": "📚 Este proyecto demuestra dominio del frontend y enfoque en UX en un formato de trivia atractivo—¡perfecto para los amantes de los quizzes!"
+    "E-commerce API": "API de Comercio Electrónico",
+    "E-commerce API Description": "🛒 Una API RESTful backend construida para una tienda ficticia usando Python y FastAPI.",
+    "E-commerce API Features": "⚙️ Soporta listado de productos, autenticación de usuarios, carrito de compras y gestión de pedidos.",
+    "E-commerce API Skills": "🧰 Habilidades demostradas en diseño de API, gestión de rutas, interacción con bases de datos usando SQLAlchemy y autenticación segura de usuarios.",
+    "E-commerce API Conclusion": "📦 Este proyecto destaca capacidades backend completas adecuadas para servicios web escalables."
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -209,7 +214,12 @@ const translations = {
     "Trivia React Description": "🧠 Une application de quiz construite avec React qui récupère dynamiquement des questions depuis l'API Open Trivia DB.",
     "Trivia React Features": "🎯 Fonctions : sélection de catégorie, filtres de difficulté, suivi des scores et transitions fluides entre composants.",
     "Trivia React Skills": "🛠️ Gestion d'état avec React (useState/useEffect), structure des composants, passage de props et requêtes asynchrones.",
-    "Trivia React Conclusion": "📚 Ce projet montre une maîtrise du frontend et un souci de l'UX dans un format de quiz engageant—parfait pour les amateurs de trivia !"
+    "Trivia React Conclusion": "📚 Ce projet montre une maîtrise du frontend et un souci de l'UX dans un format de quiz engageant—parfait pour les amateurs de trivia !",
+    "E-commerce API": "API de Commerce Électronique",
+    "E-commerce API Description": "🛒 Une API RESTful backend créée pour une boutique fictive utilisant Python et FastAPI.",
+    "E-commerce API Features": "⚙️ Prend en charge les produits, l'authentification des utilisateurs, le panier et la gestion des commandes.",
+    "E-commerce API Skills": "🧰 Compétences démontrées en conception d'API, gestion des routes, interactions avec la base de données via SQLAlchemy et authentification sécurisée.",
+    "E-commerce API Conclusion": "📦 Ce projet met en valeur des capacités backend complètes adaptées aux services web évolutifs."   
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -315,7 +325,13 @@ const translations = {
     "Trivia React Description": "🧠 Un'applicazione trivia in stile quiz sviluppata con React che recupera dinamicamente le domande dall'API Open Trivia DB.",
     "Trivia React Features": "🎯 Funzionalità come selezione della categoria, filtri di difficoltà, tracciamento del punteggio e transizioni fluide dei componenti.",
     "Trivia React Skills": "🛠️ Gestione dello stato in React (useState/useEffect), struttura dei componenti, passaggio di props e recupero asincrono dei dati.",
-    "Trivia React Conclusion": "📚 Questo progetto dimostra competenze frontend e attenzione all'esperienza utente in un formato quiz coinvolgente—perfetto per gli amanti della trivia!"
+    "Trivia React Conclusion": "📚 Questo progetto dimostra competenze frontend e attenzione all'esperienza utente in un formato quiz coinvolgente—perfetto per gli amanti della trivia!",
+    "E-commerce API": "API per E-commerce",
+    "E-commerce API Description": "🛒 Un'API RESTful backend costruita per un negozio fittizio usando Python e FastAPI.",
+    "E-commerce API Features": "⚙️ Supporta elenchi di prodotti, autenticazione utenti, carrello e gestione ordini.",
+    "E-commerce API Skills": "🧰 Competenze dimostrate nella progettazione di API, gestione delle route, interazione con il database tramite SQLAlchemy e autenticazione sicura.",
+    "E-commerce API Conclusion": "📦 Questo progetto evidenzia capacità backend complete adatte a servizi web scalabili."
+  }
   },
 };
 
