@@ -103,12 +103,12 @@ const translations = {
     "Trivia React Description": "🧠 Una aplicación de trivia tipo cuestionario construida con React que obtiene preguntas de la API Open Trivia DB.",
     "Trivia React Features": "🎯 Características como selección de categoría, filtros de dificultad, seguimiento de puntuación y transiciones suaves entre componentes.",
     "Trivia React Skills": "🛠️ Manejo de estado en React (useState/useEffect), estructura de componentes, paso de props y obtención asíncrona de datos.",
-    "Trivia React Conclusion": "📚 Este proyecto demuestra dominio del frontend y enfoque en UX en un formato de trivia atractivo—¡perfecto para los amantes de los quizzes!"
+    "Trivia React Conclusion": "📚 Este proyecto demuestra dominio del frontend y enfoque en UX en un formato de trivia atractivo—¡perfecto para los amantes de los quizzes!",
     "E-commerce API": "API de Comercio Electrónico",
     "E-commerce API Description": "🛒 Una API RESTful backend construida para una tienda ficticia usando Python y FastAPI.",
     "E-commerce API Features": "⚙️ Soporta listado de productos, autenticación de usuarios, carrito de compras y gestión de pedidos.",
     "E-commerce API Skills": "🧰 Habilidades demostradas en diseño de API, gestión de rutas, interacción con bases de datos usando SQLAlchemy y autenticación segura de usuarios.",
-    "E-commerce API Conclusion": "📦 Este proyecto destaca capacidades backend completas adecuadas para servicios web escalables."
+    "E-commerce API Conclusion": "📦 Este proyecto destaca capacidades backend completas adecuadas para servicios web escalables.",
     "E-commerce Product Listing": "Listado de Productos E-commerce",
     "E-commerce Product Listing Description": "🛍️ Una elegante y divertida aplicación web de listado de productos inspirada en Pokémon, construida con HTML, CSS y JavaScript.",
     "E-commerce Product Listing Features": "🧾 Muestra una lista dinámica de Pokémon como productos con IDs únicos, búsqueda en tiempo real y diseño responsive.",
@@ -224,7 +224,7 @@ const translations = {
     "E-commerce API Description": "🛒 Une API RESTful backend créée pour une boutique fictive utilisant Python et FastAPI.",
     "E-commerce API Features": "⚙️ Prend en charge les produits, l'authentification des utilisateurs, le panier et la gestion des commandes.",
     "E-commerce API Skills": "🧰 Compétences démontrées en conception d'API, gestion des routes, interactions avec la base de données via SQLAlchemy et authentification sécurisée.",
-    "E-commerce API Conclusion": "📦 Ce projet met en valeur des capacités backend complètes adaptées aux services web évolutifs."  
+    "E-commerce API Conclusion": "📦 Ce projet met en valeur des capacités backend complètes adaptées aux services web évolutifs.",
     "E-commerce Product Listing": "Liste de Produits E-commerce",
     "E-commerce Product Listing Description": "🛍️ Une application web élégante et ludique de liste de produits inspirée par Pokémon, construite avec HTML, CSS et JavaScript.",
     "E-commerce Product Listing Features": "🧾 Affiche une liste dynamique de Pokémon en tant que produits avec identifiants uniques, filtrage de recherche en temps réel et design responsive.",
@@ -340,7 +340,7 @@ const translations = {
     "E-commerce API Description": "🛒 Un'API RESTful backend costruita per un negozio fittizio usando Python e FastAPI.",
     "E-commerce API Features": "⚙️ Supporta elenchi di prodotti, autenticazione utenti, carrello e gestione ordini.",
     "E-commerce API Skills": "🧰 Competenze dimostrate nella progettazione di API, gestione delle route, interazione con il database tramite SQLAlchemy e autenticazione sicura.",
-    "E-commerce API Conclusion": "📦 Questo progetto evidenzia capacità backend complete adatte a servizi web scalabili."
+    "E-commerce API Conclusion": "📦 Questo progetto evidenzia capacità backend complete adatte a servizi web scalabili.",
     "E-commerce Product Listing": "Elenco Prodotti E-commerce",
     "E-commerce Product Listing Description": "🛍️ Un'app web elegante e giocosa di elenco prodotti ispirata ai Pokémon, costruita con HTML, CSS e JavaScript.",
     "E-commerce Product Listing Features": "🧾 Mostra un elenco dinamico di Pokémon come prodotti con ID unici, filtro di ricerca in tempo reale e layout responsive.",
