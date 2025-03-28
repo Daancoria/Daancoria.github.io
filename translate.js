@@ -114,6 +114,11 @@ const translations = {
     "E-commerce Product Listing Features": "🧾 Muestra una lista dinámica de Pokémon como productos con IDs únicos, búsqueda en tiempo real y diseño responsive.",
     "E-commerce Product Listing Skills": "🎨 Destaca la manipulación del DOM, integración asíncrona de API, diseño en cuadrícula y una interfaz limpia.",
     "E-commerce Product Listing Conclusion": "📱 Un prototipo funcional y entretenido de e-commerce que demuestra técnicas prácticas de frontend sin frameworks.",
+    "Marvel Character Explorer": "Explorador de Personajes de Marvel",
+    "Marvel Character Explorer Description": "🦸 Una aplicación web que permite explorar información sobre personajes del universo Marvel utilizando la API de Marvel.",
+    "Marvel Character Explorer Features": "🧬 Búsqueda por nombre de superhéroe, navegación por tarjetas, detalles de personajes y diseño responsive.",
+    "Marvel Character Explorer Skills": "🛠️ Habilidades demostradas: consumo de API pública de Marvel, manejo de eventos en DOM, promesas y manejo de errores en JavaScript.",
+    "Marvel Character Explorer Conclusion": "📚 Un proyecto ideal para quienes desean conectar frontend con APIs potentes en un entorno divertido y familiar.",
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -230,6 +235,11 @@ const translations = {
     "E-commerce Product Listing Features": "🧾 Affiche une liste dynamique de Pokémon en tant que produits avec identifiants uniques, filtrage de recherche en temps réel et design responsive.",
     "E-commerce Product Listing Skills": "🎨 Met en avant la manipulation du DOM, l'intégration d'API asynchrone, les mises en page en grille et une UI/UX soignée.",
     "E-commerce Product Listing Conclusion": "📱 Un prototype e-commerce amusant et fonctionnel démontrant des techniques frontend pratiques sans frameworks.",
+    "Marvel Character Explorer": "Explorateur de Personnages Marvel",
+    "Marvel Character Explorer Description": "🦸 Une application web permettant d'explorer des informations sur les personnages de l'univers Marvel à l'aide de l'API Marvel.",
+    "Marvel Character Explorer Features": "🧬 Recherche par nom de super-héros, navigation par cartes, détails des personnages et design réactif.",
+    "Marvel Character Explorer Skills": "🛠️ Compétences démontrées : utilisation de l'API publique de Marvel, gestion des événements DOM, promesses et gestion des erreurs en JavaScript.",
+    "Marvel Character Explorer Conclusion": "📚 Un projet idéal pour connecter le frontend à des API puissantes dans un univers familier et amusant.",
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -346,6 +356,11 @@ const translations = {
     "E-commerce Product Listing Features": "🧾 Mostra un elenco dinamico di Pokémon come prodotti con ID unici, filtro di ricerca in tempo reale e layout responsive.",
     "E-commerce Product Listing Skills": "🎨 Mette in risalto la manipolazione del DOM, integrazione asincrona di API, layout a griglia e UI/UX pulita.",
     "E-commerce Product Listing Conclusion": "📱 Un prototipo e-commerce divertente e funzionale che dimostra tecniche pratiche di frontend senza l'uso di framework.",
+    "Marvel Character Explorer": "Esploratore di Personaggi Marvel",
+    "Marvel Character Explorer Description": "🦸 Un'applicazione web per esplorare informazioni sui personaggi dell'universo Marvel utilizzando l'API Marvel.",
+    "Marvel Character Explorer Features": "🧬 Ricerca per nome di supereroe, navigazione tramite card, dettagli dei personaggi e design reattivo.",
+    "Marvel Character Explorer Skills": "🛠️ Competenze dimostrate: uso dell'API pubblica Marvel, gestione eventi DOM, promesse e gestione errori in JavaScript.",
+    "Marvel Character Explorer Conclusion": "📚 Un progetto ideale per chi vuole collegare il frontend ad API potenti in un ambiente divertente e familiare.",
   },
 };
 
