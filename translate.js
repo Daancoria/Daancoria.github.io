@@ -113,7 +113,7 @@ const translations = {
     "E-commerce Product Listing Description": "🛍️ Una elegante y divertida aplicación web de listado de productos inspirada en Pokémon, construida con HTML, CSS y JavaScript.",
     "E-commerce Product Listing Features": "🧾 Muestra una lista dinámica de Pokémon como productos con IDs únicos, búsqueda en tiempo real y diseño responsive.",
     "E-commerce Product Listing Skills": "🎨 Destaca la manipulación del DOM, integración asíncrona de API, diseño en cuadrícula y una interfaz limpia.",
-    "E-commerce Product Listing Conclusion": "📱 Un prototipo funcional y entretenido de e-commerce que demuestra técnicas prácticas de frontend sin frameworks."
+    "E-commerce Product Listing Conclusion": "📱 Un prototipo funcional y entretenido de e-commerce que demuestra técnicas prácticas de frontend sin frameworks.",
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -229,7 +229,7 @@ const translations = {
     "E-commerce Product Listing Description": "🛍️ Une application web élégante et ludique de liste de produits inspirée par Pokémon, construite avec HTML, CSS et JavaScript.",
     "E-commerce Product Listing Features": "🧾 Affiche une liste dynamique de Pokémon en tant que produits avec identifiants uniques, filtrage de recherche en temps réel et design responsive.",
     "E-commerce Product Listing Skills": "🎨 Met en avant la manipulation du DOM, l'intégration d'API asynchrone, les mises en page en grille et une UI/UX soignée.",
-    "E-commerce Product Listing Conclusion": "📱 Un prototype e-commerce amusant et fonctionnel démontrant des techniques frontend pratiques sans frameworks."
+    "E-commerce Product Listing Conclusion": "📱 Un prototype e-commerce amusant et fonctionnel démontrant des techniques frontend pratiques sans frameworks.",
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -345,8 +345,7 @@ const translations = {
     "E-commerce Product Listing Description": "🛍️ Un'app web elegante e giocosa di elenco prodotti ispirata ai Pokémon, costruita con HTML, CSS e JavaScript.",
     "E-commerce Product Listing Features": "🧾 Mostra un elenco dinamico di Pokémon come prodotti con ID unici, filtro di ricerca in tempo reale e layout responsive.",
     "E-commerce Product Listing Skills": "🎨 Mette in risalto la manipolazione del DOM, integrazione asincrona di API, layout a griglia e UI/UX pulita.",
-    "E-commerce Product Listing Conclusion": "📱 Un prototipo e-commerce divertente e funzionale che dimostra tecniche pratiche di frontend senza l'uso di framework."
-  }
+    "E-commerce Product Listing Conclusion": "📱 Un prototipo e-commerce divertente e funzionale che dimostra tecniche pratiche di frontend senza l'uso di framework.",
   },
 };
 
