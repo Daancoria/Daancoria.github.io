@@ -130,7 +130,8 @@ const translations = {
     "Event Center Menu": "• Menú en formato tabla con categorías",
     "Event Center Map": "• Mapa incrustado en la página de ubicación",
     "Event Center Form": "• Formulario de contacto validado",
-    "Event Center Responsive": "• Diseño responsivo con CSS grid/flexbox y efectos hover"   
+    "Event Center Responsive": "• Diseño responsivo con CSS grid/flexbox y efectos hover",
+    "Event Center Conclusion": "📌 Un proyecto inspirado en el mundo real centrado en la organización del diseño, la usabilidad y la adaptabilidad para una experiencia multipágina."
   },
   fr: {
     "About Me": "👤 À propos de moi",
@@ -264,6 +265,7 @@ const translations = {
     "Event Center Map": "• Carte intégrée sur la page de localisation",
     "Event Center Form": "• Formulaire de contact validé",
     "Event Center Responsive": "• Mise en page responsive avec CSS grid/flexbox et effets au survol",
+    "Event Center Conclusion": "📌 Un projet inspiré du monde réel axé sur l'organisation de la mise en page, la convivialité et la réactivité pour une expérience multipage."
   },
   it: {
     "About Me": "👤 Chi sono",
@@ -396,7 +398,8 @@ const translations = {
     "Event Center Menu": "• Menù in formato tabella con categorie",
     "Event Center Map": "• Mappa integrata nella pagina della posizione",
     "Event Center Form": "• Modulo di contatto validato",
-    "Event Center Responsive": "• Layout responsive con CSS grid/flexbox ed effetti hover"
+    "Event Center Responsive": "• Layout responsive con CSS grid/flexbox ed effetti hover",
+    "Event Center Conclusion": "📌 Un progetto ispirato al mondo reale incentrato sull'organizzazione del layout, l'usabilità e la reattività per un'esperienza multipagina."
   },
 };
 
