@@ -387,14 +387,11 @@ function translatePage(language) {
   elements.forEach((element) => {
     const key = element.getAttribute("data-translate");
     if (language === "en") {
-      // Reset to original text
       element.textContent = element.dataset.originalText || element.textContent;
     } else {
-      // Save original text if not already saved
       if (!element.dataset.originalText) {
         element.dataset.originalText = element.textContent;
       }
-      // Translate text
       element.textContent = translations[language][key] || element.textContent;
     }
   });
@@ -402,6 +399,7 @@ function translatePage(language) {
 
 document.getElementById("language").addEventListener("change", (event) => {
   const selectedLanguage = event.target.value;
+  localStorage.setItem("selectedLanguage", selectedLanguage);
   translatePage(selectedLanguage);
 });
 
@@ -413,16 +411,15 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdownMenu.classList.toggle("active");
   });
 
-  // Close the dropdown if clicked outside
   document.addEventListener("click", (event) => {
     if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
       dropdownMenu.classList.remove("active");
     }
   });
-});
 
-// Toggle dropdown menu
-document.querySelector(".dropdown-toggle").addEventListener("click", () => {
-  document.querySelector(".dropdown-menu").classList.toggle("active");
+  // Load saved language or default to English
+  const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+  document.getElementById("language").value = savedLanguage;
+  translatePage(savedLanguage);
 });
 
