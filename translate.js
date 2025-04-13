@@ -146,7 +146,7 @@ const translations = {
     "Task Manager App Model": "🗂️ Modelo de tareas avanzado: Subtareas, tareas recurrentes, recordatorios, notas enriquecidas y tiempo estimado.",
     "Task Manager App Calendar": "📅 Calendario interactivo: Vista mensual/semanal/diaria con tareas arrastrables y botón modal de creación.",
     "Task Manager App UI": "🎨 Interfaz moderna: Diseño responsivo, modo oscuro, animaciones y formularios con validación y estilo modular.",
-    "Task Manager App Tech": "🛠️ Stack: React + Vite, TypeScript, Auth0, Context API, React Router, React Big Calendar."
+    "Task Manager App Tech": "🛠️ Stack: React + Vite, TypeScript, Auth0, Context API, React Router, React Big Calendar.",
   },
   fr: {
     "About Me": "👤 À propos de moi",
