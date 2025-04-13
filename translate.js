@@ -131,7 +131,7 @@ const translations = {
     "Event Center Map": "• Mapa incrustado en la página de ubicación",
     "Event Center Form": "• Formulario de contacto validado",
     "Event Center Responsive": "• Diseño responsivo con CSS grid/flexbox y efectos hover",
-    "Event Center Conclusion": "📌 Un proyecto inspirado en el mundo real centrado en la organización del diseño, la usabilidad y la adaptabilidad para una experiencia multipágina."
+    "Event Center Conclusion": "📌 Un proyecto inspirado en el mundo real centrado en la organización del diseño, la usabilidad y la adaptabilidad para una experiencia multipágina.",
     "Advanced React E-commerce": "Advanced React E-commerce",
     "Advanced React E-commerce Intro": "🛍️ Plataforma de comercio electrónico escalable con React, Redux Toolkit, Firebase y TypeScript, diseñada para brindar experiencias fluidas de compra.",
     "Advanced React E-commerce Auth": "🔐 Autenticación: Registro/inicio de sesión seguro con Firebase Authentication y gestión de sesiones con Redux Toolkit.",
@@ -280,7 +280,7 @@ const translations = {
     "Event Center Map": "• Carte intégrée sur la page de localisation",
     "Event Center Form": "• Formulaire de contact validé",
     "Event Center Responsive": "• Mise en page responsive avec CSS grid/flexbox et effets au survol",
-    "Event Center Conclusion": "📌 Un projet inspiré du monde réel axé sur l'organisation de la mise en page, la convivialité et la réactivité pour une expérience multipage."
+    "Event Center Conclusion": "📌 Un projet inspiré du monde réel axé sur l'organisation de la mise en page, la convivialité et la réactivité pour une expérience multipage.",
     "Advanced React E-commerce": "Advanced React E-commerce",
     "Advanced React E-commerce Intro": "🛍️ Une plateforme e-commerce robuste et évolutive construite avec React, Redux Toolkit, Firebase et TypeScript—conçue pour offrir une expérience d'achat fluide.",
     "Advanced React E-commerce Auth": "🔐 Authentification : Inscription/connexion sécurisée avec Firebase Authentication et gestion de session via Redux Toolkit.",
@@ -429,7 +429,7 @@ const translations = {
     "Event Center Map": "• Mappa integrata nella pagina della posizione",
     "Event Center Form": "• Modulo di contatto validato",
     "Event Center Responsive": "• Layout responsive con CSS grid/flexbox ed effetti hover",
-    "Event Center Conclusion": "📌 Un progetto ispirato al mondo reale incentrato sull'organizzazione del layout, l'usabilità e la reattività per un'esperienza multipagina."
+    "Event Center Conclusion": "📌 Un progetto ispirato al mondo reale incentrato sull'organizzazione del layout, l'usabilità e la reattività per un'esperienza multipagina.",
     "Advanced React E-commerce": "Advanced React E-commerce",
     "Advanced React E-commerce Intro": "🛍️ Una piattaforma e-commerce scalabile e robusta creata con React, Redux Toolkit, Firebase e TypeScript—pensata per offrire un'esperienza di acquisto fluida.",
     "Advanced React E-commerce Auth": "🔐 Autenticazione: Registrazione/login sicuro con Firebase Authentication e gestione delle sessioni con Redux Toolkit.",
