@@ -1,5 +1,6 @@
 const translations = {
   es: {
+    "See it live": "📌 Ver en vivo",
     "About Me": "👤 Sobre mí",
     "Skills": "🛠️ Habilidades",
     "Projects": "📂 Proyectos",
@@ -153,6 +154,7 @@ const translations = {
     "Task Manager App Tech": "🛠️ Stack: React + Vite, TypeScript, Auth0, Context API, React Router, React Big Calendar.",
   },
   fr: {
+    "See it live": "📌 Voir en ligne",
     "About Me": "👤 À propos de moi",
     "Skills": "🛠️ Compétences",
     "Projects": "📂 Projets",
@@ -306,6 +308,7 @@ const translations = {
     "Task Manager App Tech": "🛠️ Stack : React + Vite, TypeScript, Auth0, Context API, React Router, React Big Calendar.",
   },
   it: {
+    "See it live": "📌 Guarda online",
     "About Me": "👤 Chi sono",
     "Skills": "🛠️ Competenze",
     "Projects": "📂 Progetti",
