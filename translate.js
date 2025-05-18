@@ -178,7 +178,6 @@ const translations = {
     "Inventory App Logs": "📊 Registro de Actividad: Auditoría persistente de todas las acciones del usuario (inicio de sesión, modificaciones, facturación, eliminación) con filtros y exportación desde SQLite.",
     "Inventory App Extensions": "🧩 Código escalable: Arquitectura modular lista para integraciones futuras como escaneo de códigos de barras, copias de seguridad en la nube y paneles analíticos.",
     "Inventory App Stack": "🛠️ Tecnologías: Python 3, Tkinter GUI, SQLite3, ReportLab (PDF), CSV, hashlib (seguridad), PIL (para futuras mejoras con imágenes).",
-}
   },
   fr: {
     "See it live": "📌 Voir en ligne",
@@ -359,7 +358,6 @@ const translations = {
     "Inventory App Logs": "📊 Journalisation & Audit : Suivi permanent des événements utilisateurs (connexions, modifications, suppressions, factures), filtrable et exportable depuis SQLite.",
     "Inventory App Extensions": "🧩 Base de code évolutive : Structure modulaire prête à accueillir des fonctionnalités comme le scan de code-barres, sauvegarde cloud, et tableaux de bord analytiques.",
     "Inventory App Stack": "🛠️ Technologies : Python 3, Tkinter, SQLite3, ReportLab, CSV, hashlib, PIL (à venir pour les images)."
-}
   },
   it: {
     "See it live": "📌 Guarda online",
