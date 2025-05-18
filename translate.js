@@ -164,6 +164,16 @@ const translations = {
     "Quantum FlowForce Features": "🤖 Funcionalidades clave: Arquitectura modular con React, animaciones activadas por desplazamiento, formulario de contacto con validación en tiempo real y envío automatizado de correos (EmailJS), lógica de precios escalonada, carrusel de testimonios, secciones de héroe y llamado a la acción, y diseño responsivo optimizado para rendimiento.",
     "Quantum FlowForce Stack": "🛠️ Stack tecnológico: React 19 + TypeScript, Tailwind CSS con variables personalizadas, iconos de Lucide React, EmailJS para correos automáticos, API de IntersectionObserver para animaciones, Vite para compilación rápida y despliegue continuo en Vercel con CDN global.",
     "Quantum FlowForce Deployment": "🚀 Despliegue: Sitio en producción desplegado mediante Vercel, con integración CI/CD y estructura optimizada para SEO, ideal para soluciones SaaS B2B escalables.",
+    "Inventory App": "Aplicación de Gestión de Inventario",
+    "Inventory App Intro": "📦 Un sistema profesional de inventario y facturación creado con Python y Tkinter—diseñado para pequeñas empresas que necesitan controlar existencias, gestionar proveedores y agilizar procesos.",
+    "Inventory App Core": "🧾 Funcionalidades principales: Seguimiento dinámico de productos, alertas de bajo stock, eliminación reversible, exportación a CSV/PDF, búsqueda instantánea, gestión de facturas y acceso por roles.",
+    "Inventory App Roles": "🔐 Seguridad y gestión de usuarios: Inicio de sesión con contraseñas cifradas (SHA-256), roles de administrador/visor, cierre de sesión seguro y registro completo de actividad.",
+    "Inventory App UI": "🎨 Interfaz Moderna: Botones con emojis, controles con bordes suaves, encabezado con degradado estilo Windows 11, modo claro/oscuro y navegación por pestañas con `ttk.Notebook`.",
+    "Inventory App Utility": "📁 Importación y Exportación: Carga masiva desde CSV, generación automática de PDFs con ReportLab, compatibilidad con impresión y resumen visual del inventario.",
+    "Inventory App Logs": "📊 Registro de Actividad: Auditoría persistente de todas las acciones del usuario (inicio de sesión, modificaciones, facturación, eliminación) con filtros y exportación desde SQLite.",
+    "Inventory App Extensions": "🧩 Código escalable: Arquitectura modular lista para integraciones futuras como escaneo de códigos de barras, copias de seguridad en la nube y paneles analíticos.",
+    "Inventory App Stack": "🛠️ Tecnologías: Python 3, Tkinter GUI, SQLite3, ReportLab (PDF), CSV, hashlib (seguridad), PIL (para futuras mejoras con imágenes).",
+}
   },
   fr: {
     "See it live": "📌 Voir en ligne",
@@ -330,6 +340,16 @@ const translations = {
     "Quantum FlowForce Features": "🤖 Fonctionnalités principales : Architecture React modulaire avec animations déclenchées au défilement, formulaire de contact avec validation en temps réel et envoi automatique d'e-mails via EmailJS, logique de tarification, carrousel de témoignages interactif, sections d'appel à l'action et design réactif optimisé.",
     "Quantum FlowForce Stack": "🛠️ Stack technique : React 19 + TypeScript, Tailwind CSS avec variables personnalisées, icônes Lucide React, EmailJS pour les e-mails transactionnels, API IntersectionObserver, Vite pour les builds rapides, et Vercel pour le déploiement CI/CD et hébergement mondial via CDN.",
     "Quantum FlowForce Deployment": "🚀 Déploiement : Mise en production en direct via Vercel avec intégration CI/CD, structure optimisée pour le SEO, conçu pour l'évolutivité et les solutions SaaS B2B professionnelles.",
+    "Inventory App": "Application de Gestion d'Inventaire",
+    "Inventory App Intro": "📦 Un système professionnel de gestion d'inventaire et de facturation développé avec Python et Tkinter—adapté aux petites entreprises pour suivre les stocks, gérer les fournisseurs et simplifier les tâches.",
+    "Inventory App Core": "🧾 Fonctionnalités principales : Suivi des articles, alertes de stock faible, suppression douce avec restauration, exportation CSV/PDF, recherche rapide, gestion des factures et connexion avec rôles.",
+    "Inventory App Roles": "🔐 Sécurité & Gestion des utilisateurs : Connexion sécurisée avec hachage SHA-256, rôles admin/lecteur, déconnexion rapide, et journalisation complète des actions utilisateur.",
+    "Inventory App UI": "🎨 Interface moderne : Boutons emoji, contrôles encadrés, en-tête dégradé style Windows 11, thème clair/sombre et navigation par onglets via `ttk.Notebook`.",
+    "Inventory App Utility": "📁 Importation & Exportation : Import CSV en masse, génération automatique de PDF avec ReportLab, impression système et récapitulatif clair du stock.",
+    "Inventory App Logs": "📊 Journalisation & Audit : Suivi permanent des événements utilisateurs (connexions, modifications, suppressions, factures), filtrable et exportable depuis SQLite.",
+    "Inventory App Extensions": "🧩 Base de code évolutive : Structure modulaire prête à accueillir des fonctionnalités comme le scan de code-barres, sauvegarde cloud, et tableaux de bord analytiques.",
+    "Inventory App Stack": "🛠️ Technologies : Python 3, Tkinter, SQLite3, ReportLab, CSV, hashlib, PIL (à venir pour les images)."
+}
   },
   it: {
     "See it live": "📌 Guarda online",
@@ -496,6 +516,15 @@ const translations = {
     "Quantum FlowForce Features": "🤖 Funzionalità principali: Architettura modulare in React con animazioni basate sullo scroll, modulo di contatto con validazione in tempo reale e invio email automatizzato (EmailJS), logica di prezzi a livelli, carosello testimonianze interattivo, sezioni CTA e design responsive ottimizzato.",
     "Quantum FlowForce Stack": "🛠️ Stack tecnico: React 19 + TypeScript, Tailwind CSS con variabili personalizzate, icone Lucide React, EmailJS per automazione email, API IntersectionObserver per trigger animazioni, Vite per build veloci e Vercel per deploy continuo con CDN globale.",
     "Quantum FlowForce Deployment": "🚀 Deploy: Messa in produzione su Vercel con CI/CD integrato e struttura SEO-friendly, pensato per scalabilità e presentazioni professionali in ambito SaaS B2B.",
+    "Inventory App": "App di Gestione Inventario",
+    "Inventory App Intro": "📦 Un sistema avanzato per inventario e fatturazione sviluppato in Python e Tkinter—pensato per piccole imprese che vogliono monitorare lo stock, i fornitori e le fatture con semplicità.",
+    "Inventory App Core": "🧾 Funzionalità principali: Monitoraggio articoli, avvisi di scorte basse, eliminazione soft con recupero, esportazione CSV/PDF, ricerca rapida, gestione delle fatture e accesso a ruoli.",
+    "Inventory App Roles": "🔐 Sicurezza e ruoli: Login protetto con SHA-256, ruoli admin/visualizzatore, logout sicuro e registro dettagliato delle attività utente.",
+    "Inventory App UI": "🎨 Interfaccia moderna: Pulsanti con emoji, elementi con bordi, intestazioni in stile Windows 11, tema chiaro/scuro e navigazione a schede con `ttk.Notebook`.",
+    "Inventory App Utility": "📁 Importazione & Esportazione: Importazione CSV in batch, generazione PDF automatica con ReportLab, stampa integrata e riepilogo visivo dello stock.",
+    "Inventory App Logs": "📊 Log e tracciabilità: Storico completo delle azioni utenti (login, modifiche, cancellazioni, fatture) con filtro ed esportazione da SQLite.",
+    "Inventory App Extensions": "🧩 Codice estendibile: Architettura modulare pronta per barcode scanning, backup in cloud e dashboard analitiche future.",
+    "Inventory App Stack": "🛠️ Stack: Python 3, Tkinter, SQLite3, ReportLab, CSV, hashlib, PIL (per funzioni grafiche future).",
   },
 };
 
