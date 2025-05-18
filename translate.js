@@ -589,6 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     languageSelect.addEventListener("change", (event) => {
       const selectedLanguage = event.target.value;
+      console.log("Selected Language:", selectedLanguage); // 🔍 Debug line
       localStorage.setItem("selectedLanguage", selectedLanguage);
       translatePage(selectedLanguage);
     });
