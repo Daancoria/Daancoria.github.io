@@ -487,41 +487,54 @@ const translations = {
 function translatePage(language) {
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach((element) => {
-    const key = element.getAttribute("data-translate");
+    const key = element.dataset.translate;
+    if (!key) return;
+
     if (language === "en") {
-      element.textContent = element.dataset.originalText || element.textContent;
+      // Restore original text if switching to English
+      if (element.dataset.originalText) {
+        element.textContent = element.dataset.originalText;
+      }
     } else {
       if (!element.dataset.originalText) {
         element.dataset.originalText = element.textContent;
       }
-      element.textContent = translations[language][key] || element.textContent;
+      const translation = translations[language]?.[key];
+      if (translation) {
+        element.textContent = translation;
+      }
     }
   });
 }
 
-document.getElementById("language").addEventListener("change", (event) => {
-  const selectedLanguage = event.target.value;
-  localStorage.setItem("selectedLanguage", selectedLanguage);
-  translatePage(selectedLanguage);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownMenu = document.querySelector(".dropdown-menu");
+  const languageSelect = document.getElementById("language");
 
-  dropdownToggle.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("active");
-  });
+  // Setup language selector
+  if (languageSelect) {
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    languageSelect.value = savedLanguage;
+    translatePage(savedLanguage);
 
-  document.addEventListener("click", (event) => {
-    if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
-      dropdownMenu.classList.remove("active");
-    }
-  });
+    languageSelect.addEventListener("change", (event) => {
+      const selectedLanguage = event.target.value;
+      localStorage.setItem("selectedLanguage", selectedLanguage);
+      translatePage(selectedLanguage);
+    });
+  }
 
-  // Load saved language or default to English
-  const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
-  document.getElementById("language").value = savedLanguage;
-  translatePage(savedLanguage);
+  // Setup dropdown toggle
+  if (dropdownToggle && dropdownMenu) {
+    dropdownToggle.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+        dropdownMenu.classList.remove("active");
+      }
+    });
+  }
 });
-
