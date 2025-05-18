@@ -572,6 +572,13 @@ function translatePage(language) {
   });
 }
 
+languageSelect.addEventListener("change", (event) => {
+  const selectedLanguage = event.target.value;
+  console.log("Selected Language:", selectedLanguage); // 🔍 Debug line
+  localStorage.setItem("selectedLanguage", selectedLanguage);
+  translatePage(selectedLanguage);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownMenu = document.querySelector(".dropdown-menu");
