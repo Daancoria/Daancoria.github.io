@@ -159,6 +159,11 @@ const translations = {
     "EPUB Tool Extras": "🚀 Capacidades Avanzadas: - Modo oscuro y sistema de temas - Filtro y eliminación de imágenes (`cover.jpg`, etc.) - Detección de miniatura de portada - Alertas de validación estructural - Confirmaciones y notificaciones tipo toast - Gestión segura de directorios temporales - Carga multihilo para EPUBs grandes",
     "EPUB Tool UI": "🎨 Diseño UI/UX: Interfaz modular con `tkinter`, vista de páginas desplazable, barra lateral persistente, diseño adaptable, temas globales, atajos de teclado (Esc para salir, Enter para confirmar), barra de herramientas fija y configuración centralizada de estilos.",
     "EPUB Tool Tech": "🧩 Tecnologías: Python 3.11+, `tkinter`, `zipfile`, `shutil`, `os`, `tempfile`, `lxml`, `Pillow`, `re` y `pyinstaller`. Empaquetado como `.exe` portátil para Windows sin dependencias externas.",
+    "Quantum FlowForce": "Quantum FlowForce",
+    "Quantum FlowForce Description": "⚡ Sitio web de automatización con inteligencia artificial de nivel empresarial, desarrollado para un cliente real, diseñado para optimizar operaciones de pequeñas empresas con agentes virtuales disponibles 24/7.",
+    "Quantum FlowForce Features": "🤖 Funcionalidades clave: Arquitectura modular con React, animaciones activadas por desplazamiento, formulario de contacto con validación en tiempo real y envío automatizado de correos (EmailJS), lógica de precios escalonada, carrusel de testimonios, secciones de héroe y llamado a la acción, y diseño responsivo optimizado para rendimiento.",
+    "Quantum FlowForce Stack": "🛠️ Stack tecnológico: React 19 + TypeScript, Tailwind CSS con variables personalizadas, iconos de Lucide React, EmailJS para correos automáticos, API de IntersectionObserver para animaciones, Vite para compilación rápida y despliegue continuo en Vercel con CDN global.",
+    "Quantum FlowForce Deployment": "🚀 Despliegue: Sitio en producción desplegado mediante Vercel, con integración CI/CD y estructura optimizada para SEO, ideal para soluciones SaaS B2B escalables.",
   },
   fr: {
     "See it live": "📌 Voir en ligne",
@@ -320,6 +325,11 @@ const translations = {
     "EPUB Tool Extras": "🚀 Fonctionnalités Avancées : - Mode sombre et moteur de thèmes - Filtrage/suppression d’images (ex : `cover.jpg`) - Détection de la miniature de couverture - Alertes de validation EPUB - Fenêtres de confirmation et notifications toast - Gestion sécurisée du dossier temporaire - Chargement multi-threadé pour les gros EPUBs",
     "EPUB Tool UI": "🎨 Design UI/UX : Interface modulaire avec `tkinter`, affichage défilable des pages, navigation latérale persistante, redimensionnement réactif, thèmes globaux, raccourcis clavier (Esc pour quitter, Entrée pour confirmer), barre d’outils fixe et configuration centralisée.",
     "EPUB Tool Tech": "🧩 Stack Technique : Python 3.11+, `tkinter`, `zipfile`, `shutil`, `os`, `tempfile`, `lxml`, `Pillow`, `re`, et `pyinstaller`. Compilé en `.exe` portable pour Windows sans dépendances supplémentaires.",
+    "Quantum FlowForce": "Quantum FlowForce",
+    "Quantum FlowForce Description": "⚡ Un site de présentation d'automatisation par IA conçu pour un client réel, visant à automatiser les opérations des petites entreprises grâce à des agents virtuels intelligents disponibles 24h/24 et 7j/7.",
+    "Quantum FlowForce Features": "🤖 Fonctionnalités principales : Architecture React modulaire avec animations déclenchées au défilement, formulaire de contact avec validation en temps réel et envoi automatique d'e-mails via EmailJS, logique de tarification, carrousel de témoignages interactif, sections d'appel à l'action et design réactif optimisé.",
+    "Quantum FlowForce Stack": "🛠️ Stack technique : React 19 + TypeScript, Tailwind CSS avec variables personnalisées, icônes Lucide React, EmailJS pour les e-mails transactionnels, API IntersectionObserver, Vite pour les builds rapides, et Vercel pour le déploiement CI/CD et hébergement mondial via CDN.",
+    "Quantum FlowForce Deployment": "🚀 Déploiement : Mise en production en direct via Vercel avec intégration CI/CD, structure optimisée pour le SEO, conçu pour l'évolutivité et les solutions SaaS B2B professionnelles.",
   },
   it: {
     "See it live": "📌 Guarda online",
@@ -481,8 +491,13 @@ const translations = {
     "EPUB Tool Extras": "🚀 Funzioni Avanzate: - Modalità scura e temi personalizzati - Filtraggio ed eliminazione immagini (es: `cover.jpg`) - Rilevamento miniatura di copertina - Avvisi di validazione struttura EPUB - Modali di conferma e notifiche toast - Gestione sicura delle cartelle temporanee - Caricamento multi-thread per EPUB di grandi dimensioni",
     "EPUB Tool UI": "🎨 Design UI/UX: Layout modulare in `tkinter`, visualizzazione delle pagine scrollabile, sidebar persistente, ridimensionamento reattivo, temi globali, scorciatoie da tastiera (Esc per uscire, Invio per confermare), barra degli strumenti fissa e configurazione centralizzata dei widget.",
     "EPUB Tool Tech": "🧩 Stack Tecnologico: Python 3.11+, `tkinter`, `zipfile`, `shutil`, `os`, `tempfile`, `lxml`, `Pillow`, `re` e `pyinstaller`. Compilato in `.exe` portatile per Windows senza dipendenze esterne.",
-  },
-};
+    "Quantum FlowForce": "Quantum FlowForce",
+    "Quantum FlowForce Description": "⚡ Una landing page per l'automazione con IA, sviluppata per un'azienda reale, progettata per ottimizzare le operazioni delle piccole imprese con agenti virtuali intelligenti attivi 24/7.",
+    "Quantum FlowForce Features": "🤖 Funzionalità principali: Architettura modulare in React con animazioni basate sullo scroll, modulo di contatto con validazione in tempo reale e invio email automatizzato (EmailJS), logica di prezzi a livelli, carosello testimonianze interattivo, sezioni CTA e design responsive ottimizzato.",
+    "Quantum FlowForce Stack": "🛠️ Stack tecnico: React 19 + TypeScript, Tailwind CSS con variabili personalizzate, icone Lucide React, EmailJS per automazione email, API IntersectionObserver per trigger animazioni, Vite per build veloci e Vercel per deploy continuo con CDN globale.",
+    "Quantum FlowForce Deployment": "🚀 Deploy: Messa in produzione su Vercel con CI/CD integrato e struttura SEO-friendly, pensato per scalabilità e presentazioni professionali in ambito SaaS B2B.",
+    },
+  };
 
 function translatePage(language) {
   const elements = document.querySelectorAll("[data-translate]");
