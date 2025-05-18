@@ -545,13 +545,12 @@ function translatePage(language) {
   const elements = document.querySelectorAll("[data-translate]");
   const langPack = translations[language];
 
-  document.documentElement.lang = language; // Update <html lang>
+  document.documentElement.lang = language;
 
   elements.forEach((element) => {
     const key = element.dataset.translate;
     if (!key) return;
 
-    // Save original text if not already saved
     if (!element.dataset.originalText) {
       element.dataset.originalText = element.textContent.trim();
     }
@@ -570,13 +569,6 @@ function translatePage(language) {
   });
 }
 
-languageSelect.addEventListener("change", (event) => {
-  const selectedLanguage = event.target.value;
-  console.log("Selected Language:", selectedLanguage); // 🔍 Debug line
-  localStorage.setItem("selectedLanguage", selectedLanguage);
-  translatePage(selectedLanguage);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownToggle = document.querySelector(".dropdown-toggle");
   const dropdownMenu = document.querySelector(".dropdown-menu");
@@ -589,7 +581,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     languageSelect.addEventListener("change", (event) => {
       const selectedLanguage = event.target.value;
-      console.log("Selected Language:", selectedLanguage); // 🔍 Debug line
+      console.log("Selected Language:", selectedLanguage);
       localStorage.setItem("selectedLanguage", selectedLanguage);
       translatePage(selectedLanguage);
     });
