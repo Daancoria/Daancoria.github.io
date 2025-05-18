@@ -534,18 +534,18 @@ function translatePage(language) {
     const key = element.dataset.translate;
     if (!key) return;
 
+    // Save original text if not already saved
+    if (!element.dataset.originalText) {
+      element.dataset.originalText = element.textContent.trim();
+    }
+
     if (language === "en") {
-      // Restore original text if switching to English
-      if (element.dataset.originalText) {
-        element.textContent = element.dataset.originalText;
-      }
+      // Restore original English text
+      element.textContent = element.dataset.originalText;
     } else {
-      if (!element.dataset.originalText) {
-        element.dataset.originalText = element.textContent;
-      }
-      const translation = translations[language]?.[key];
-      if (translation) {
-        element.textContent = translation;
+      const langPack = translations[language];
+      if (langPack && langPack.hasOwnProperty(key)) {
+        element.textContent = langPack[key];
       }
     }
   });
@@ -556,7 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownMenu = document.querySelector(".dropdown-menu");
   const languageSelect = document.getElementById("language");
 
-  // Setup language selector
+  // Load saved language or default to English
   if (languageSelect) {
     const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
     languageSelect.value = savedLanguage;
@@ -569,14 +569,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Setup dropdown toggle
+  // Toggle dropdown visibility
   if (dropdownToggle && dropdownMenu) {
     dropdownToggle.addEventListener("click", () => {
       dropdownMenu.classList.toggle("active");
     });
 
     document.addEventListener("click", (event) => {
-      if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+      if (
+        !dropdownMenu.contains(event.target) &&
+        !dropdownToggle.contains(event.target)
+      ) {
         dropdownMenu.classList.remove("active");
       }
     });
