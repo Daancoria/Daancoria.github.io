@@ -496,8 +496,8 @@ const translations = {
     "Quantum FlowForce Features": "🤖 Funzionalità principali: Architettura modulare in React con animazioni basate sullo scroll, modulo di contatto con validazione in tempo reale e invio email automatizzato (EmailJS), logica di prezzi a livelli, carosello testimonianze interattivo, sezioni CTA e design responsive ottimizzato.",
     "Quantum FlowForce Stack": "🛠️ Stack tecnico: React 19 + TypeScript, Tailwind CSS con variabili personalizzate, icone Lucide React, EmailJS per automazione email, API IntersectionObserver per trigger animazioni, Vite per build veloci e Vercel per deploy continuo con CDN globale.",
     "Quantum FlowForce Deployment": "🚀 Deploy: Messa in produzione su Vercel con CI/CD integrato e struttura SEO-friendly, pensato per scalabilità e presentazioni professionali in ambito SaaS B2B.",
-    },
-  };
+  },
+};
 
 function translatePage(language) {
   const elements = document.querySelectorAll("[data-translate]");
