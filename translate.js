@@ -21,6 +21,11 @@ const translations = {
       "🤝 Buscando colaborar en proyectos de juegos de código abierto, aplicaciones de cuestionarios y desafíos de programación creativa.",
     "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
       "🎲 Dato curioso: ¡Me encanta crear juegos basados en lógica, ajustar mecánicas para que el juego sea perfecto y explorar nuevos idiomas!",
+    "Translate:": "🌐 Traducir:",
+    "Spanish": "Español",
+    "French": "Francés",
+    "Italian": "Italiano",
+    "Sudoku Pygame": "Sudoku (Pygame)",
     "Dungeon Crawler": "Juego de calabozo",
     "Dungeon Crawler Description": "Estoy emocionado de presentar mi juego Dungeon Crawler, una aventura retro desarrollada completamente en Python usando Pygame.",
     "Dungeon Crawler Features": "⚔️ Explora un laberinto generado proceduralmente lleno de tesoros ocultos, paredes destructibles y enemigos inteligentes.",
@@ -197,6 +202,11 @@ const translations = {
       "🤝 Je cherche à collaborer sur des projets de jeux open-source, des applications de quiz et des défis de programmation créative.",
     "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
       "🎲 Fait amusant : J'adore créer des jeux basés sur la logique, ajuster les mécaniques pour que le gameplay soit parfait et explorer de nouvelles langues !",
+    "Translate:": "🌐 Traduire :",
+    "Spanish": "Espagnol",
+    "French": "Français",
+    "Italian": "Italien",
+    "Sudoku Pygame": "Sudoku (Pygame)",
     "Dungeon Crawler": "Explorateur de Donjons",
     "Dungeon Crawler Description": "Je suis ravi de présenter mon jeu Dungeon Crawler, une aventure rétro développée entièrement en Python avec Pygame.",
     "Dungeon Crawler Features": "⚔️ Explorez un labyrinthe généré procéduralement rempli de trésors cachés, de murs destructibles et d'ennemis astucieux.",
@@ -373,6 +383,11 @@ const translations = {
       "🤝 Cerco di collaborare a progetti di giochi open-source, applicazioni di quiz e sfide di programmazione creativa.",
     "Fun fact: I love building logic-based games, tweaking mechanics to make gameplay feel just right, and exploring new languages!":
       "🎲 Curiosità: Adoro creare giochi basati sulla logica, modificare le meccaniche per rendere il gameplay perfetto ed esplorare nuove lingue!",
+    "Translate:": "🌐 Traduci:",
+    "Spanish": "Spagnolo",
+    "French": "Francese",
+    "Italian": "Italiano",
+    "Sudoku Pygame": "Sudoku (Pygame)",
     "Dungeon Crawler": "Esploratore di Dungeon",
     "Dungeon Crawler Description": "Sono entusiasta di presentare il mio gioco Dungeon Crawler, un'avventura retrò sviluppata interamente in Python usando Pygame.",
     "Dungeon Crawler Features": "⚔️ Esplora un labirinto generato proceduralmente pieno di tesori nascosti, muri distruttibili e nemici astuti.",
@@ -504,7 +519,7 @@ const translations = {
     "Task Manager App Calendar": "📅 Calendario interattivo: Vista per giorno/settimana/mese con drag-and-drop e creazione rapida via modale.",
     "Task Manager App UI": "🎨 UI/UX moderna: Layout mobile-first, modalità scura, pulsante +AddTask animato, validazione moduli e CSS modulare.",
     "Task Manager App Tech": "🛠️ Stack: React + Vite, TypeScript, Auth0, Context API, React Router, React Big Calendar.",
-     "EPUB Page Editor": "Editor di Pagine EPUB",
+    "EPUB Page Editor": "Editor di Pagine EPUB",
     "EPUB Tool Intro": "📖 Applicazione desktop per la modifica dettagliata dei file EPUB—consente modifiche non distruttive delle pagine `.xhtml`, riordino dello spine, revisione dei metadati e pulizia delle risorse in un'interfaccia reattiva.",
     "EPUB Tool Core": "🛠️ Funzionalità Principali: Estrazione automatica degli EPUB (`zipfile`, `shutil`), analisi e validazione dello spine (`lxml`), anteprima delle pagine in tempo reale, eliminazione singola o multipla di file `.xhtml`, sincronizzazione dello spine e manifest, e riconfezionamento con controllo CRC.",
     "EPUB Tool Model": "🔍 Controllo Strutturato EPUB: Visualizza tutti i file di contenuto, metadati (titolo, identificatore, copertina), e numero di file; gestisce EPUB corrotti con loader di fallback; registra operazioni interne e preserva la struttura EPUB 2.0/3.0.",
@@ -530,6 +545,10 @@ const translations = {
 
 function translatePage(language) {
   const elements = document.querySelectorAll("[data-translate]");
+  const langPack = translations[language];
+
+  document.documentElement.lang = language; // Update <html lang>
+
   elements.forEach((element) => {
     const key = element.dataset.translate;
     if (!key) return;
@@ -540,13 +559,15 @@ function translatePage(language) {
     }
 
     if (language === "en") {
-      // Restore original English text
       element.textContent = element.dataset.originalText;
-    } else {
-      const langPack = translations[language];
-      if (langPack && langPack.hasOwnProperty(key)) {
+    } else if (langPack && langPack.hasOwnProperty(key)) {
+      if (element.tagName === "OPTION") {
+        element.text = langPack[key];
+      } else {
         element.textContent = langPack[key];
       }
+    } else {
+      console.warn(`Missing translation for: "${key}" in "${language}"`);
     }
   });
 }
@@ -556,7 +577,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownMenu = document.querySelector(".dropdown-menu");
   const languageSelect = document.getElementById("language");
 
-  // Load saved language or default to English
   if (languageSelect) {
     const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
     languageSelect.value = savedLanguage;
@@ -569,7 +589,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Toggle dropdown visibility
   if (dropdownToggle && dropdownMenu) {
     dropdownToggle.addEventListener("click", () => {
       dropdownMenu.classList.toggle("active");
